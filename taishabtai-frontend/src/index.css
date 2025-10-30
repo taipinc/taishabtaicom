@@ -1,0 +1,87 @@
+@import url("https://use.typekit.net/wcs0fkh.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns:  repeat(12, 1fr);
+  height: 100vh;
+}
+
+/* Add to your index.css */
+
+/* Typography */
+body {
+  font-family: 'elza-text', sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-family: "fraunces-variable", sans-serif;
+  font-style: italic;
+  font-variation-settings: 'opsz' 9, 'wght' 100, 'SOFT' 100, 'WONK' 1;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem 0;
+}
+
+/* Sidebar styling */
+.sidebar {
+  padding: 2rem;
+  background: #f9f9f9;
+  grid-column: 1 / 5;
+  border-right: 1px solid #e0e0e0;
+  overflow-y: auto;
+}
+
+.sidebar h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-family: "fraunces-variable", sans-serif;
+  font-style: italic;
+  font-variation-settings: 'opsz' 9, 'wght' 100, 'SOFT' 100, 'WONK' 1;
+}
+
+.sidebar p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.sidebar li {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar li:hover {
+  color: #000;
+}
+
+/* Main content styling */
+.main-content {
+  padding: 2rem 3rem;
+  grid-column: 5 / 13;
+  overflow-y: auto;
+  font-size: 1.5rem;
+}
+
+.main-content p {
+  margin-bottom: 1.5rem;
+  max-width: 65ch; /* Optimal reading width */
+}
