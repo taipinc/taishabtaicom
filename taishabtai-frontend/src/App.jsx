@@ -1,137 +1,113 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import axios from 'axios';
+import Sidebar from './components/Sidebar';
+import PageContent from './components/PageContent';
+import ImageDisplay from './components/ImageDisplay';
+import {STRAPI_API_URL} from './constants';
 
-function renderContent(contentBlocks) {
-	if (!contentBlocks) return null;
+const normalizePage = (page) => {
+	if (!page) return null;
+	if (!page.attributes) return page;
 
-	return contentBlocks.map((block, index) => {
-		// Handle Text Block component
-		if (block.__component === 'text.text-block') {
-			return (
-				<div
-					key={index}
-					className='text-block'
-				>
-					{renderRichText(block.text)}
-				</div>
-			);
-		}
+	return {
+		id: page.id,
+		...page.attributes,
+	};
+};
 
-		// Handle Image Block component
-		if (block.__component === 'image.image-block') {
-			const imageUrl = block.image?.url
-				? `http://localhost:1337${block.image.url}`
-				: null;
+const getPageSlug = (page) => {
+	if (!page) return '';
+	if (page.slug) return page.slug;
+	return page.attributes?.slug || '';
+};
 
-			return (
-				<div
-					key={index}
-					className='image-block'
-				>
-					{imageUrl ? (
-						<>
-							<img
-								src={imageUrl}
-								alt={block.caption || 'Image'}
-								style={{maxWidth: '100%', height: 'auto'}}
-							/>
-							{block.caption && (
-								<p className='image-caption'>{block.caption}</p>
-							)}
-						</>
-					) : (
-						<div
-							style={{
-								background: '#f0f0f0',
-								padding: '2rem',
-								textAlign: 'center',
-							}}
-						>
-							No image uploaded
-						</div>
-					)}
-				</div>
-			);
-		}
-
-		return null;
-	});
-}
-
-// Helper function for rich text (same as before)
-function renderRichText(richTextBlocks) {
-	if (!richTextBlocks) return null;
-
-	return richTextBlocks.map((block, index) => {
-		if (block.type === 'paragraph') {
-			return (
-				<p key={index}>
-					{block.children.map((child, childIndex) => {
-						if (child.type === 'text') {
-							return child.text;
-						}
-						return null;
-					})}
-				</p>
-			);
-		}
-		return null;
-	});
-}
 function App() {
 	const [pages, setPages] = useState([]);
 	const [currentPage, setCurrentPage] = useState(null);
+	const [hoveredPage, setHoveredPage] = useState(null);
 	const [loading, setLoading] = useState(true);
+	const [isIndexPage, setIsIndexPage] = useState(false);
+
+	useEffect(() => {
+		const updateViewportVar = () => {
+			const vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+		};
+
+		updateViewportVar();
+		window.addEventListener('resize', updateViewportVar);
+		return () => window.removeEventListener('resize', updateViewportVar);
+	}, []);
 
 	useEffect(() => {
 		const fetchPages = async () => {
 			try {
 				const response = await axios.get(
-					'http://localhost:1337/api/pages?populate[content][populate]=*'
+					`${STRAPI_API_URL}/pages?populate=*`
 				);
 				console.log('Full API response:', response.data);
-				setPages(response.data.data);
+				const rawPages = response.data?.data || [];
+				const normalisedPages = rawPages.map(normalizePage);
+				setPages(normalisedPages);
 				setLoading(false);
 			} catch (error) {
 				console.error('Error fetching pages:', error);
 				setLoading(false);
 			}
 		};
+
 		fetchPages();
 	}, []);
-	// Add this after your existing useEffect
+
 	useEffect(() => {
-		// Function to load page based on current URL
+		if (!pages.length) return;
+
 		const loadPageFromURL = () => {
-			const slug = window.location.pathname.slice(1); // Remove leading slash
-			if (slug && pages.length > 0) {
-				const page = pages.find((p) => p.slug === slug);
-				if (page) {
-					setCurrentPage(page);
+			const slug = window.location.pathname.slice(1).toLowerCase();
+
+			if (slug) {
+				const match = pages.find((page) => {
+					const pageSlug = getPageSlug(page).toLowerCase();
+					return pageSlug === slug;
+				});
+
+				if (match) {
+					setCurrentPage(normalizePage(match));
+					setIsIndexPage(false);
+					return;
 				}
-			} else if (pages.length > 0) {
-				// Default to first page if no slug
-				setCurrentPage(pages[0]);
 			}
+
+			// When at root /, show index page with interactive images
+			setCurrentPage(null);
+			setIsIndexPage(true);
 		};
 
-		// Load page when pages are loaded or URL changes
-		if (pages.length > 0) {
-			loadPageFromURL();
-		}
+		loadPageFromURL();
+		window.addEventListener('popstate', loadPageFromURL);
 
-		// Listen for browser back/forward buttons
-		const handlePopState = () => {
-			loadPageFromURL();
-		};
-
-		window.addEventListener('popstate', handlePopState);
-
-		// Cleanup listener
 		return () => {
-			window.removeEventListener('popstate', handlePopState);
+			window.removeEventListener('popstate', loadPageFromURL);
 		};
-	}, [pages]); // Run when pages array changes
+	}, [pages]);
+
+	const handleSelectPage = useCallback((page) => {
+		if (!page) return;
+		setCurrentPage(normalizePage(page));
+		setIsIndexPage(false);
+		const slug = getPageSlug(page);
+		if (slug) {
+			window.history.pushState({}, '', `/${slug}`);
+		} else {
+			window.history.pushState({}, '', '/');
+		}
+	}, []);
+
+	const handlePageHover = useCallback((page) => {
+		if (isIndexPage) {
+			setHoveredPage(page);
+		}
+	}, [isIndexPage]);
 
 	if (loading) {
 		return <div>Loading...</div>;
@@ -139,39 +115,21 @@ function App() {
 
 	console.log('Current page:', currentPage);
 	console.log('Content:', currentPage?.content);
+	console.log('Is index page:', isIndexPage);
 
 	return (
 		<div className='app-container'>
-			<div className='sidebar'>
-				<h1>Shabtai Pinchevsky</h1>
-				<p>
-					I’m a photographer and digital media artist working at the
-					intersection of architecture, archives, technology, and politics. In
-					my works, I use 3D modeling, mapping, internet-based tools, and more
-					to examine archival photographic materials and their relations to
-					geographies of conflict and displacement, especially in Israel /
-					Palestine. My practice is engaged with issues of social justice and
-					human rights, and their application in art and media
-				</p>
-				<ul>
-					{pages.map((page) => (
-						<li
-							key={page.id}
-							onClick={() => {
-								setCurrentPage(page);
-								window.history.pushState({}, '', `/${page.slug}`);
-							}}
-							style={{cursor: 'pointer'}}
-						>
-							{page.title}
-						</li>
-					))}
-				</ul>
-			</div>
-			<div className='main-content'>
-				<h1>{currentPage?.title}</h1>
-				<div>{renderContent(currentPage?.content)}</div>
-			</div>
+			<Sidebar
+				pages={pages}
+				currentPage={currentPage}
+				onSelectPage={handleSelectPage}
+				onPageHover={handlePageHover}
+			/>
+			{isIndexPage ? (
+				<ImageDisplay page={hoveredPage} />
+			) : (
+				<PageContent page={currentPage} />
+			)}
 		</div>
 	);
 }
