@@ -87,10 +87,21 @@ async function downloadAllImages(data) {
 			const content = page.attributes?.content || page.content;
 			if (content && Array.isArray(content)) {
 				for (const block of content) {
+					// Handle image-block component
 					if (block.__component === 'image.image-block' && block.image) {
 						const blockImageUrl = extractImageUrl(block.image);
 						if (blockImageUrl) {
 							imagesToDownload.add(blockImageUrl);
+						}
+					}
+					// Handle image-gallery component
+					if (block.__component === 'image.image-gallery' && block.images) {
+						const images = Array.isArray(block.images) ? block.images : [block.images];
+						for (const img of images) {
+							const galleryImageUrl = extractImageUrl(img);
+							if (galleryImageUrl) {
+								imagesToDownload.add(galleryImageUrl);
+							}
 						}
 					}
 				}
@@ -132,13 +143,22 @@ async function main() {
 		// Fetch each page individually with nested population
 		for (const page of pagesList.data) {
 			try {
-				const detailedPage = await fetchData(`/pages/${page.documentId}?populate%5Bcontent%5D%5Bpopulate%5D=*&populate%5Bimage%5D=*`);
+				// Strapi v5 array-based populate for nested relations in dynamic zones
+				// This populates: page.image, content blocks' image field, and content blocks' images field
+				const populateQuery = 'populate[0]=image&populate[1]=content.image&populate[2]=content.images';
+				const detailedPage = await fetchData(`/pages/${page.documentId}?${populateQuery}`);
 				pagesWithContent.data.push(detailedPage.data);
 			} catch (error) {
-				console.warn(`  ⚠️  Could not fetch nested data for ${page.title || page.documentId}, using basic data`);
-				// Fallback to basic page data
-				const basicPage = await fetchData(`/pages/${page.documentId}?populate=*`);
-				pagesWithContent.data.push(basicPage.data);
+				console.warn(`  ⚠️  Could not fetch nested data for ${page.title || page.documentId}, trying fallback...`);
+				try {
+					// Fallback: Try simpler population
+					const basicPage = await fetchData(`/pages/${page.documentId}?populate[0]=content&populate[1]=image`);
+					pagesWithContent.data.push(basicPage.data);
+				} catch (fallbackError) {
+					console.warn(`  ⚠️  Fallback also failed for ${page.title || page.documentId}, using minimal data`);
+					// Last resort: use basic data from list
+					pagesWithContent.data.push(page);
+				}
 			}
 		}
 

@@ -26,12 +26,13 @@ export const resolveMediaUrl = (media) => {
 		return url;
 	}
 
-	// If it's already a relative path starting with /, use as-is
-	if (url.startsWith('/')) {
+	// If it's already pointing to /images/, return as-is (already processed by optimize-images)
+	if (url.startsWith('/images/')) {
 		return url;
 	}
 
-	// Extract filename and point to local images folder (legacy Strapi URLs)
+	// Extract filename from Strapi URLs (/uploads/...) and point to local images folder
+	// This handles both /uploads/filename.jpg and other relative paths
 	const filename = url.split('/').pop();
 	return `/images/${filename}`;
 };
