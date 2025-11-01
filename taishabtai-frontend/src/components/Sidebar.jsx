@@ -1,6 +1,10 @@
-import React from 'react';
+import React, {useState, useRef} from 'react';
+import ImagePopover from './ImagePopover';
 
 const Sidebar = ({pages, currentPage, onSelectPage, onPageHover}) => {
+	const [hoveredPage, setHoveredPage] = useState(null);
+	const [hoveredElement, setHoveredElement] = useState(null);
+	const rowRefs = useRef({});
 	const resolveValue = (page, key) => {
 		if (!page) return '';
 		if (page[key] !== undefined && page[key] !== null) return page[key];
@@ -83,10 +87,23 @@ const Sidebar = ({pages, currentPage, onSelectPage, onPageHover}) => {
 								return (
 									<tr
 										key={pageId}
+										ref={(el) => {
+											if (el) rowRefs.current[pageId] = el;
+										}}
 										className={`page-row${isActive ? ' page-row-active' : ''}`}
 										onClick={() => onSelectPage(page)}
-										onMouseEnter={() => onPageHover?.(page)}
-										onMouseLeave={() => onPageHover?.(null)}
+										onMouseEnter={(e) => {
+											onPageHover?.(page);
+											if (resolveValue(page, 'image')) {
+												setHoveredPage(page);
+												setHoveredElement(e.currentTarget);
+											}
+										}}
+										onMouseLeave={() => {
+											onPageHover?.(null);
+											setHoveredPage(null);
+											setHoveredElement(null);
+										}}
 										onKeyDown={(event) => {
 											if (event.key === 'Enter' || event.key === ' ') {
 												event.preventDefault();
@@ -106,6 +123,7 @@ const Sidebar = ({pages, currentPage, onSelectPage, onPageHover}) => {
 					</table>
 				</div>
 			))}
+			<ImagePopover page={hoveredPage} titleElement={hoveredElement} />
 		</div>
 	);
 };

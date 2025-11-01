@@ -27,6 +27,7 @@ function App() {
 	const [hoveredPage, setHoveredPage] = useState(null);
 	const [loading, setLoading] = useState(true);
 	const [isIndexPage, setIsIndexPage] = useState(false);
+	const [siteSettings, setSiteSettings] = useState(null);
 
 	useEffect(() => {
 		const updateViewportVar = () => {
@@ -40,23 +41,40 @@ function App() {
 	}, []);
 
 	useEffect(() => {
-		const fetchPages = async () => {
+		const fetchContent = async () => {
 			try {
-				const response = await axios.get(
+				const pagesRequest = axios.get(
 					`${STRAPI_API_URL}/pages?populate=*`
 				);
-				console.log('Full API response:', response.data);
-				const rawPages = response.data?.data || [];
+				const siteRequest = axios
+					.get(`${STRAPI_API_URL}/site?populate=image`)
+					.catch((error) => {
+						console.error('Error fetching site settings:', error);
+						return null;
+					});
+
+				const [pagesResponse, siteResponse] = await Promise.all([
+					pagesRequest,
+					siteRequest,
+				]);
+
+				const rawPages = pagesResponse?.data?.data || [];
 				const normalisedPages = rawPages.map(normalizePage);
 				setPages(normalisedPages);
-				setLoading(false);
+
+				if (siteResponse?.data?.data) {
+					setSiteSettings(normalizePage(siteResponse.data.data));
+				} else {
+					setSiteSettings(null);
+				}
 			} catch (error) {
 				console.error('Error fetching pages:', error);
+			} finally {
 				setLoading(false);
 			}
 		};
 
-		fetchPages();
+		fetchContent();
 	}, []);
 
 	useEffect(() => {
@@ -104,10 +122,10 @@ function App() {
 	}, []);
 
 	const handlePageHover = useCallback((page) => {
-		if (isIndexPage) {
-			setHoveredPage(page);
-		}
-	}, [isIndexPage]);
+		// No longer updating hoveredPage for background image changes
+		// Hover now only triggers popover component
+		setHoveredPage(null);
+	}, []);
 
 	if (loading) {
 		return <div>Loading...</div>;
@@ -126,7 +144,10 @@ function App() {
 				onPageHover={handlePageHover}
 			/>
 			{isIndexPage ? (
-				<ImageDisplay page={hoveredPage} />
+				<ImageDisplay
+					page={null}
+					fallbackImage={siteSettings?.image}
+				/>
 			) : (
 				<PageContent page={currentPage} />
 			)}
