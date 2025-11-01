@@ -810,14 +810,14 @@
       ]
     },
     {
-      "id": 92,
+      "id": 93,
       "documentId": "w4rcaung3k6qjskp8jjxakgi",
       "title": "If the Fire within Our Eyes",
       "slug": "If the Fire within Our Eyes",
       "customCSS": null,
       "createdAt": "2025-10-31T02:08:35.031Z",
-      "updatedAt": "2025-11-01T20:30:40.829Z",
-      "publishedAt": "2025-11-01T20:30:40.842Z",
+      "updatedAt": "2025-11-01T20:33:39.492Z",
+      "publishedAt": "2025-11-01T20:33:39.502Z",
       "years": "2023",
       "subtitle": null,
       "group": "Selected Works",
@@ -826,221 +826,18 @@
       "content": [
         {
           "__component": "image.image-block",
-          "id": 11,
-          "enableFullscreen": null,
-          "caption": null,
-          "image": {
-            "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
-            "name": "FINAL_01_07_19_29_copy_98683f000f.jpg",
-            "width": 2707,
-            "height": 2160,
-            "responsive": {
-              "srcset": [
-                {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-640w.jpg",
-                  "width": 640,
-                  "size": 11852
-                },
-                {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1024w.jpg",
-                  "width": 1024,
-                  "size": 23654
-                },
-                {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1920w.jpg",
-                  "width": 1920,
-                  "size": 98864
-                },
-                {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-2560w.jpg",
-                  "width": 2560,
-                  "size": 172204
-                },
-                {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
-                  "width": 2707,
-                  "size": 217918
-                }
-              ],
-              "sizes": "100vw"
-            }
-          }
+          "id": 12,
+          "enableFullscreen": true,
+          "caption": null
         },
         {
           "__component": "image.image-gallery",
-          "id": 2,
+          "id": 3,
           "layout": "justify",
-          "rows": 2,
+          "rows": 3,
           "gutter": 8,
           "enableFullscreen": true,
-          "caption": null,
-          "images": [
-            {
-              "url": "/images/optimized/cha_001_printed_f51895ed7b-original.jpeg",
-              "name": "cha_001_printed_f51895ed7b.jpeg",
-              "width": 3000,
-              "height": 2213,
-              "responsive": {
-                "srcset": [
-                  {
-                    "url": "/images/optimized/cha_001_printed_f51895ed7b-640w.jpeg",
-                    "width": 640,
-                    "size": 72776
-                  },
-                  {
-                    "url": "/images/optimized/cha_001_printed_f51895ed7b-1024w.jpeg",
-                    "width": 1024,
-                    "size": 189146
-                  },
-                  {
-                    "url": "/images/optimized/cha_001_printed_f51895ed7b-1920w.jpeg",
-                    "width": 1920,
-                    "size": 606338
-                  },
-                  {
-                    "url": "/images/optimized/cha_001_printed_f51895ed7b-2560w.jpeg",
-                    "width": 2560,
-                    "size": 947152
-                  },
-                  {
-                    "url": "/images/optimized/cha_001_printed_f51895ed7b-original.jpeg",
-                    "width": 3000,
-                    "size": 1178120
-                  }
-                ],
-                "sizes": "100vw"
-              }
-            },
-            {
-              "url": "/images/optimized/IMG_1338_S_2538fffd6e-original.jpg",
-              "name": "IMG_1338_S_2538fffd6e.jpg",
-              "width": 3000,
-              "height": 2000,
-              "responsive": {
-                "srcset": [
-                  {
-                    "url": "/images/optimized/IMG_1338_S_2538fffd6e-640w.jpg",
-                    "width": 640,
-                    "size": 84730
-                  },
-                  {
-                    "url": "/images/optimized/IMG_1338_S_2538fffd6e-1024w.jpg",
-                    "width": 1024,
-                    "size": 228238
-                  },
-                  {
-                    "url": "/images/optimized/IMG_1338_S_2538fffd6e-1920w.jpg",
-                    "width": 1920,
-                    "size": 759166
-                  },
-                  {
-                    "url": "/images/optimized/IMG_1338_S_2538fffd6e-2560w.jpg",
-                    "width": 2560,
-                    "size": 1187376
-                  },
-                  {
-                    "url": "/images/optimized/IMG_1338_S_2538fffd6e-original.jpg",
-                    "width": 3000,
-                    "size": 1388640
-                  }
-                ],
-                "sizes": "100vw"
-              }
-            },
-            {
-              "url": "/images/optimized/duplicating_palestine_img_a7a16451de-original.jpg",
-              "name": "duplicating_palestine_img_a7a16451de.jpg",
-              "width": 3000,
-              "height": 2000,
-              "responsive": {
-                "srcset": [
-                  {
-                    "url": "/images/optimized/duplicating_palestine_img_a7a16451de-640w.jpg",
-                    "width": 640,
-                    "size": 80228
-                  },
-                  {
-                    "url": "/images/optimized/duplicating_palestine_img_a7a16451de-1024w.jpg",
-                    "width": 1024,
-                    "size": 202094
-                  },
-                  {
-                    "url": "/images/optimized/duplicating_palestine_img_a7a16451de-1920w.jpg",
-                    "width": 1920,
-                    "size": 607580
-                  },
-                  {
-                    "url": "/images/optimized/duplicating_palestine_img_a7a16451de-2560w.jpg",
-                    "width": 2560,
-                    "size": 932640
-                  },
-                  {
-                    "url": "/images/optimized/duplicating_palestine_img_a7a16451de-original.jpg",
-                    "width": 3000,
-                    "size": 1136134
-                  }
-                ],
-                "sizes": "100vw"
-              }
-            },
-            {
-              "url": "/images/optimized/DSC_0286_S_beb696747c-original.jpg",
-              "name": "DSC_0286_S_beb696747c.jpg",
-              "width": 900,
-              "height": 600,
-              "responsive": {
-                "srcset": [
-                  {
-                    "url": "/images/optimized/DSC_0286_S_beb696747c-640w.jpg",
-                    "width": 640,
-                    "size": 45946
-                  },
-                  {
-                    "url": "/images/optimized/DSC_0286_S_beb696747c-original.jpg",
-                    "width": 900,
-                    "size": 77464
-                  }
-                ],
-                "sizes": "100vw"
-              }
-            },
-            {
-              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
-              "name": "FINAL_01_07_19_29_copy_98683f000f.jpg",
-              "width": 2707,
-              "height": 2160,
-              "responsive": {
-                "srcset": [
-                  {
-                    "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-640w.jpg",
-                    "width": 640,
-                    "size": 11852
-                  },
-                  {
-                    "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1024w.jpg",
-                    "width": 1024,
-                    "size": 23654
-                  },
-                  {
-                    "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1920w.jpg",
-                    "width": 1920,
-                    "size": 98864
-                  },
-                  {
-                    "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-2560w.jpg",
-                    "width": 2560,
-                    "size": 172204
-                  },
-                  {
-                    "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
-                    "width": 2707,
-                    "size": 217918
-                  }
-                ],
-                "sizes": "100vw"
-              }
-            }
-          ]
+          "caption": null
         }
       ]
     }
