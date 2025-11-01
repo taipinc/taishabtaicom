@@ -1,9 +1,7 @@
 import React, {useState, useEffect, useCallback} from 'react';
-import axios from 'axios';
 import Sidebar from './components/Sidebar';
 import PageContent from './components/PageContent';
 import ImageDisplay from './components/ImageDisplay';
-import {STRAPI_API_URL} from './constants';
 
 const normalizePage = (page) => {
 	if (!page) return null;
@@ -43,32 +41,27 @@ function App() {
 	useEffect(() => {
 		const fetchContent = async () => {
 			try {
-				const pagesRequest = axios.get(
-					`${STRAPI_API_URL}/pages?populate=*`
-				);
-				const siteRequest = axios
-					.get(`${STRAPI_API_URL}/site?populate=image`)
-					.catch((error) => {
-						console.error('Error fetching site settings:', error);
-						return null;
-					});
+				// Load from static JSON files
+				const pagesResponse = await fetch('/data/pages.json');
+				const siteResponse = await fetch('/data/site.json').catch((error) => {
+					console.error('Error fetching site settings:', error);
+					return null;
+				});
 
-				const [pagesResponse, siteResponse] = await Promise.all([
-					pagesRequest,
-					siteRequest,
-				]);
+				const pagesData = await pagesResponse.json();
+				const siteData = siteResponse ? await siteResponse.json() : null;
 
-				const rawPages = pagesResponse?.data?.data || [];
+				const rawPages = pagesData?.data || [];
 				const normalisedPages = rawPages.map(normalizePage);
 				setPages(normalisedPages);
 
-				if (siteResponse?.data?.data) {
-					setSiteSettings(normalizePage(siteResponse.data.data));
+				if (siteData?.data) {
+					setSiteSettings(normalizePage(siteData.data));
 				} else {
 					setSiteSettings(null);
 				}
 			} catch (error) {
-				console.error('Error fetching pages:', error);
+				console.error('Error loading data:', error);
 			} finally {
 				setLoading(false);
 			}

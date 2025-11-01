@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "fetch-data": "node scripts/fetch-strapi-data.js",
     "build": "vite build",
+    "build:full": "npm run fetch-data && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

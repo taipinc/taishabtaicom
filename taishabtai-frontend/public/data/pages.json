@@ -1,0 +1,597 @@
+{
+  "data": [
+    {
+      "id": 26,
+      "documentId": "ra53bjx5vje5d46bxubljno1",
+      "title": "Can a Self-Driving Car Navigate an Apartheid Road?",
+      "slug": "can a self-driving car",
+      "customCSS": null,
+      "createdAt": "2025-10-31T01:56:31.946Z",
+      "updatedAt": "2025-10-31T01:58:58.381Z",
+      "publishedAt": "2025-10-31T01:58:58.390Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Ongoing",
+      "order": null,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 33,
+      "documentId": "w4rcaung3k6qjskp8jjxakgi",
+      "title": "If the Fire within Our Eyes",
+      "slug": "If the Fire within Our Eyes",
+      "customCSS": null,
+      "createdAt": "2025-10-31T02:08:35.031Z",
+      "updatedAt": "2025-10-31T02:17:11.726Z",
+      "publishedAt": "2025-10-31T02:17:11.735Z",
+      "years": "2023",
+      "subtitle": null,
+      "group": "Selected Works",
+      "order": 1,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 34,
+      "documentId": "qm81d8pn16jnp7zyp9gxsj0v",
+      "title": "Duplicating Palestine",
+      "slug": "Duplicating Palestine",
+      "customCSS": null,
+      "createdAt": "2025-10-31T02:08:10.031Z",
+      "updatedAt": "2025-10-31T02:17:39.146Z",
+      "publishedAt": "2025-10-31T02:17:39.155Z",
+      "years": "2022",
+      "subtitle": null,
+      "group": "Selected Works",
+      "order": 2,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 35,
+      "documentId": "yj08v2d80dlu6v74wb2b0qc3",
+      "title": "An Abridged Draft for a Letter to Leila Khaled",
+      "slug": "abridged",
+      "customCSS": null,
+      "createdAt": "2025-07-07T00:56:13.442Z",
+      "updatedAt": "2025-10-31T02:17:56.028Z",
+      "publishedAt": "2025-10-31T02:17:56.035Z",
+      "years": "2022",
+      "subtitle": null,
+      "group": "Selected Works",
+      "order": 3,
+      "image": {
+        "id": 3,
+        "documentId": "wwju08pxik3f6ylkocszf7r4",
+        "name": "_DSC0286_S.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 900,
+        "height": 600,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail__DSC0286_S.jpg",
+            "hash": "thumbnail_DSC_0286_S_beb696747c",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 234,
+            "height": 156,
+            "size": 9.78,
+            "sizeInBytes": 9781,
+            "url": "/uploads/thumbnail_DSC_0286_S_beb696747c.jpg"
+          },
+          "small": {
+            "name": "small__DSC0286_S.jpg",
+            "hash": "small_DSC_0286_S_beb696747c",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 500,
+            "height": 333,
+            "size": 37.81,
+            "sizeInBytes": 37814,
+            "url": "/uploads/small_DSC_0286_S_beb696747c.jpg"
+          },
+          "medium": {
+            "name": "medium__DSC0286_S.jpg",
+            "hash": "medium_DSC_0286_S_beb696747c",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 750,
+            "height": 500,
+            "size": 76.24,
+            "sizeInBytes": 76241,
+            "url": "/uploads/medium_DSC_0286_S_beb696747c.jpg"
+          }
+        },
+        "hash": "DSC_0286_S_beb696747c",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 99.37,
+        "url": "/uploads/DSC_0286_S_beb696747c.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2025-10-30T16:41:23.437Z",
+        "updatedAt": "2025-10-30T16:41:32.391Z",
+        "publishedAt": "2025-10-30T16:41:23.437Z"
+      },
+      "content": [
+        {
+          "__component": "text.text-block",
+          "id": 21,
+          "text": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "An Abridged Draft for a Letter to Leila Khaled reconstruct the landscape of Palestine before the Nakba, as it is depicted in the Palmach Aerial Photographs Collection. It uses a flight simulator to create a flight tour of the reconstructed collection, superimposing it on the satellite views of modern Israel."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "text.text-block",
+          "id": 22,
+          "text": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "The Palmach Aerial Photographs Collection includes more than 600 images, taken by the Zionist Paramilitary organization during the 1947-1948 civil war in Palestine, before the Palestinian Nakba (lit. catastrophe, the displacement of Palestinian from their homeland)."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "While the collection was created in an aerial reconnaissance effort, today it provides a rare documentation of Palestinian landscape – depicted on the verge of its imminent erasure. The collection is stored within three archives in Israel, yet it is largely inaccessible for viewing, especially for Palestinians."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "video.video-embed",
+          "id": 8,
+          "url": "https://vimeo.com/879235196"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "documentId": "e5e0k8sxia8fakled2fv5tee",
+      "title": "On the Optics of Mount Scopus",
+      "slug": "scopus",
+      "customCSS": null,
+      "createdAt": "2025-07-07T00:55:41.032Z",
+      "updatedAt": "2025-10-31T02:18:06.676Z",
+      "publishedAt": "2025-10-31T02:18:06.684Z",
+      "years": "2021",
+      "subtitle": null,
+      "group": "Selected Works",
+      "order": 4,
+      "image": {
+        "id": 1,
+        "documentId": "id4mjy2ub8bv4u6kb2wlqjjc",
+        "name": "cha-001-printed.jpeg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 3000,
+        "height": 2213,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_cha-001-printed.jpeg",
+            "hash": "thumbnail_cha_001_printed_f51895ed7b",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 212,
+            "height": 156,
+            "size": 8.88,
+            "sizeInBytes": 8883,
+            "url": "/uploads/thumbnail_cha_001_printed_f51895ed7b.jpeg"
+          },
+          "medium": {
+            "name": "medium_cha-001-printed.jpeg",
+            "hash": "medium_cha_001_printed_f51895ed7b",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 750,
+            "height": 553,
+            "size": 106.5,
+            "sizeInBytes": 106496,
+            "url": "/uploads/medium_cha_001_printed_f51895ed7b.jpeg"
+          },
+          "small": {
+            "name": "small_cha-001-printed.jpeg",
+            "hash": "small_cha_001_printed_f51895ed7b",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 500,
+            "height": 369,
+            "size": 46.68,
+            "sizeInBytes": 46682,
+            "url": "/uploads/small_cha_001_printed_f51895ed7b.jpeg"
+          },
+          "large": {
+            "name": "large_cha-001-printed.jpeg",
+            "hash": "large_cha_001_printed_f51895ed7b",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 1000,
+            "height": 737,
+            "size": 187.3,
+            "sizeInBytes": 187295,
+            "url": "/uploads/large_cha_001_printed_f51895ed7b.jpeg"
+          }
+        },
+        "hash": "cha_001_printed_f51895ed7b",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "size": 1349.32,
+        "url": "/uploads/cha_001_printed_f51895ed7b.jpeg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2025-07-07T02:06:07.656Z",
+        "updatedAt": "2025-07-07T02:06:07.656Z",
+        "publishedAt": "2025-07-07T02:06:07.656Z"
+      },
+      "content": []
+    },
+    {
+      "id": 37,
+      "documentId": "eo4q6haokjna2njdw7xdinrw",
+      "title": "Anti Mapping",
+      "slug": "antimapping",
+      "customCSS": null,
+      "createdAt": "2025-07-07T00:56:47.747Z",
+      "updatedAt": "2025-10-31T02:18:17.666Z",
+      "publishedAt": "2025-10-31T02:18:17.674Z",
+      "years": "2018-21",
+      "subtitle": "With Miki Kratsman",
+      "group": "Selected Works",
+      "order": 5,
+      "image": {
+        "id": 2,
+        "documentId": "knsel5k2iol7n8xln4bmwub2",
+        "name": "IMG_1338_S.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 3000,
+        "height": 2000,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_IMG_1338_S.jpg",
+            "hash": "thumbnail_IMG_1338_S_2538fffd6e",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 234,
+            "height": 156,
+            "size": 10.01,
+            "sizeInBytes": 10014,
+            "url": "/uploads/thumbnail_IMG_1338_S_2538fffd6e.jpg"
+          },
+          "small": {
+            "name": "small_IMG_1338_S.jpg",
+            "hash": "small_IMG_1338_S_2538fffd6e",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 500,
+            "height": 333,
+            "size": 48.5,
+            "sizeInBytes": 48502,
+            "url": "/uploads/small_IMG_1338_S_2538fffd6e.jpg"
+          },
+          "medium": {
+            "name": "medium_IMG_1338_S.jpg",
+            "hash": "medium_IMG_1338_S_2538fffd6e",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 750,
+            "height": 500,
+            "size": 116.48,
+            "sizeInBytes": 116478,
+            "url": "/uploads/medium_IMG_1338_S_2538fffd6e.jpg"
+          },
+          "large": {
+            "name": "large_IMG_1338_S.jpg",
+            "hash": "large_IMG_1338_S_2538fffd6e",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 1000,
+            "height": 667,
+            "size": 207.87,
+            "sizeInBytes": 207870,
+            "url": "/uploads/large_IMG_1338_S_2538fffd6e.jpg"
+          }
+        },
+        "hash": "IMG_1338_S_2538fffd6e",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 1518.91,
+        "url": "/uploads/IMG_1338_S_2538fffd6e.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2025-07-07T02:17:53.041Z",
+        "updatedAt": "2025-07-07T02:32:28.199Z",
+        "publishedAt": "2025-07-07T02:17:53.042Z"
+      },
+      "content": []
+    },
+    {
+      "id": 38,
+      "documentId": "kyfqyk0b5lmwtwx0wiqxvrh8",
+      "title": "Perpetual Motion of the Fourth Kind",
+      "slug": "perpetual motion",
+      "customCSS": null,
+      "createdAt": "2025-10-31T02:09:47.806Z",
+      "updatedAt": "2025-10-31T02:18:30.110Z",
+      "publishedAt": "2025-10-31T02:18:30.119Z",
+      "years": "2019",
+      "subtitle": null,
+      "group": "Selected Works",
+      "order": 6,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 41,
+      "documentId": "m5w4x7folha63a5nhvnb7awp",
+      "title": "Gas, Stun, Smoke",
+      "slug": "gass stun smoke",
+      "customCSS": null,
+      "createdAt": "2025-10-31T02:18:56.785Z",
+      "updatedAt": "2025-10-31T02:19:04.890Z",
+      "publishedAt": "2025-10-31T02:19:04.899Z",
+      "years": "2017",
+      "subtitle": null,
+      "group": "Selected Works",
+      "order": 7,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 43,
+      "documentId": "z3e4lznd0g2hctiyt44naebx",
+      "title": "How to Photograph in the Land of Israel",
+      "slug": "how to photograph",
+      "customCSS": null,
+      "createdAt": "2025-10-31T02:19:27.411Z",
+      "updatedAt": "2025-10-31T02:19:27.411Z",
+      "publishedAt": "2025-10-31T02:19:27.418Z",
+      "years": "2016",
+      "subtitle": null,
+      "group": "Selected Works",
+      "order": 8,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 45,
+      "documentId": "yli1pltokgk2ee2am5w1uk0s",
+      "title": "From the Shoe Box",
+      "slug": "from the shoe box",
+      "customCSS": null,
+      "createdAt": "2025-10-31T02:19:52.015Z",
+      "updatedAt": "2025-10-31T02:19:52.015Z",
+      "publishedAt": "2025-10-31T02:19:52.024Z",
+      "years": "2015",
+      "subtitle": null,
+      "group": "Selected Works",
+      "order": 9,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 48,
+      "documentId": "w1qjwjf4xrn0xxbylk0bc4uh",
+      "title": "Mount Scopus Spatial Archive",
+      "slug": "mount scopus",
+      "customCSS": null,
+      "createdAt": "2025-10-31T02:21:38.509Z",
+      "updatedAt": "2025-10-31T02:21:43.346Z",
+      "publishedAt": "2025-10-31T02:21:43.354Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Interactive",
+      "order": 1,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 50,
+      "documentId": "rgotsg3pm6unsc4q0shhwada",
+      "title": "Tashlikh Atlas",
+      "slug": "tashlikh atlas",
+      "customCSS": null,
+      "createdAt": "2025-10-31T03:20:39.515Z",
+      "updatedAt": "2025-10-31T03:20:39.515Z",
+      "publishedAt": "2025-10-31T03:20:39.527Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Interactive",
+      "order": 2,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 69,
+      "documentId": "bby23qvk0tj3akoalxxqd60o",
+      "title": "The Jefferson Grid",
+      "slug": "the jefferson grid",
+      "customCSS": null,
+      "createdAt": "2025-10-31T03:21:45.019Z",
+      "updatedAt": "2025-10-31T03:24:16.623Z",
+      "publishedAt": "2025-10-31T03:24:16.629Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Other Works",
+      "order": 3,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 71,
+      "documentId": "txxsk4tsr0rbnq4ywy52bq33",
+      "title": "The First Trail",
+      "slug": "the first trail",
+      "customCSS": null,
+      "createdAt": "2025-10-31T03:21:27.289Z",
+      "updatedAt": "2025-10-31T03:24:46.568Z",
+      "publishedAt": "2025-10-31T03:24:46.574Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Other Works",
+      "order": 2,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 72,
+      "documentId": "n0n8ny47dxxe9zun6jp3sf6o",
+      "title": "Landscape in Continuum",
+      "slug": "landscape in continuum",
+      "customCSS": null,
+      "createdAt": "2025-10-31T03:20:55.904Z",
+      "updatedAt": "2025-10-31T03:25:13.995Z",
+      "publishedAt": "2025-10-31T03:25:14.003Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Other Works",
+      "order": 1,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 73,
+      "documentId": "nusrnbbs1hzyn2h2umcjwdy4",
+      "title": "Jerusalem Military Remains",
+      "slug": "jerusalem military remains",
+      "customCSS": null,
+      "createdAt": "2025-10-31T03:22:02.662Z",
+      "updatedAt": "2025-10-31T03:25:22.174Z",
+      "publishedAt": "2025-10-31T03:25:22.179Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Other Works",
+      "order": 4,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 74,
+      "documentId": "j4c4do2slb05tkmkw2f8ofyl",
+      "title": "Point Cloud Lifta",
+      "slug": "point cloud lifta",
+      "customCSS": null,
+      "createdAt": "2025-10-31T03:22:24.648Z",
+      "updatedAt": "2025-10-31T03:25:30.231Z",
+      "publishedAt": "2025-10-31T03:25:30.236Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Other Works",
+      "order": 5,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 75,
+      "documentId": "fsjr6dp0qk7fxdyrjgamh9k9",
+      "title": "Stereoscopic Reconstructions",
+      "slug": "stereoscopic reconstructions",
+      "customCSS": null,
+      "createdAt": "2025-10-31T03:22:38.410Z",
+      "updatedAt": "2025-10-31T03:25:40.568Z",
+      "publishedAt": "2025-10-31T03:25:40.573Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Other Works",
+      "order": 6,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 76,
+      "documentId": "lc025im19q7cs980z46kb5kh",
+      "title": "The Gardener's Post",
+      "slug": "gardeners post",
+      "customCSS": null,
+      "createdAt": "2025-10-31T03:23:00.102Z",
+      "updatedAt": "2025-10-31T03:25:47.155Z",
+      "publishedAt": "2025-10-31T03:25:47.160Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Other Works",
+      "order": 7,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 77,
+      "documentId": "t0vbxwpw8mp3jr659baqi843",
+      "title": "Mabat 2000",
+      "slug": "mabat 2000",
+      "customCSS": null,
+      "createdAt": "2025-10-31T03:23:12.338Z",
+      "updatedAt": "2025-10-31T03:25:53.604Z",
+      "publishedAt": "2025-10-31T03:25:53.610Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Other Works",
+      "order": 8,
+      "image": null,
+      "content": []
+    },
+    {
+      "id": 78,
+      "documentId": "omxo1j57tpcmnh94ppn432ya",
+      "title": "Bezalel 1",
+      "slug": "bezalel 1",
+      "customCSS": null,
+      "createdAt": "2025-10-31T03:23:26.556Z",
+      "updatedAt": "2025-10-31T03:26:00.050Z",
+      "publishedAt": "2025-10-31T03:26:00.057Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Other Works",
+      "order": 10,
+      "image": null,
+      "content": []
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 21
+    }
+  }
+}

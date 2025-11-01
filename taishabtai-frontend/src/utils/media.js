@@ -1,12 +1,14 @@
-import {STRAPI_BASE_URL} from '../constants';
-
 export const resolveMediaUrl = (media) => {
 	if (!media) return null;
 
 	if (typeof media === 'string') {
-		return media.startsWith('http')
-			? media
-			: `${STRAPI_BASE_URL}${media}`;
+		// If it's already a full URL, return it
+		if (media.startsWith('http')) {
+			return media;
+		}
+		// Extract filename and point to local images folder
+		const filename = media.split('/').pop();
+		return `/images/${filename}`;
 	}
 
 	const directUrl = media.url || media?.attributes?.url;
@@ -15,5 +17,12 @@ export const resolveMediaUrl = (media) => {
 
 	if (!url) return null;
 
-	return url.startsWith('http') ? url : `${STRAPI_BASE_URL}${url}`;
+	// If it's a full URL, return it
+	if (url.startsWith('http')) {
+		return url;
+	}
+
+	// Extract filename and point to local images folder
+	const filename = url.split('/').pop();
+	return `/images/${filename}`;
 };

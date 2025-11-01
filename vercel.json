@@ -1,0 +1,8 @@
+{
+  "buildCommand": "cd taishabtai-frontend && npm run build",
+  "outputDirectory": "taishabtai-frontend/dist",
+  "installCommand": "cd taishabtai-frontend && npm install",
+  "framework": null,
+  "cleanUrls": true,
+  "trailingSlash": false
+}

@@ -1,0 +1,80 @@
+{
+  "data": {
+    "id": 2,
+    "documentId": "pu7darsoa1oi5jq5589s9125",
+    "createdAt": "2025-10-31T12:23:19.742Z",
+    "updatedAt": "2025-10-31T12:23:19.742Z",
+    "publishedAt": "2025-10-31T12:23:19.750Z",
+    "image": {
+      "id": 4,
+      "documentId": "xcqtqgl3tvka8wb9xscvwrz1",
+      "name": "duplicating-palestine-img.jpg",
+      "alternativeText": null,
+      "caption": null,
+      "width": 3000,
+      "height": 2000,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_duplicating-palestine-img.jpg",
+          "hash": "thumbnail_duplicating_palestine_img_a7a16451de",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "path": null,
+          "width": 234,
+          "height": 156,
+          "size": 10.69,
+          "sizeInBytes": 10689,
+          "url": "/uploads/thumbnail_duplicating_palestine_img_a7a16451de.jpg"
+        },
+        "small": {
+          "name": "small_duplicating-palestine-img.jpg",
+          "hash": "small_duplicating_palestine_img_a7a16451de",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "path": null,
+          "width": 500,
+          "height": 333,
+          "size": 48.39,
+          "sizeInBytes": 48390,
+          "url": "/uploads/small_duplicating_palestine_img_a7a16451de.jpg"
+        },
+        "medium": {
+          "name": "medium_duplicating-palestine-img.jpg",
+          "hash": "medium_duplicating_palestine_img_a7a16451de",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "path": null,
+          "width": 750,
+          "height": 500,
+          "size": 111.81,
+          "sizeInBytes": 111813,
+          "url": "/uploads/medium_duplicating_palestine_img_a7a16451de.jpg"
+        },
+        "large": {
+          "name": "large_duplicating-palestine-img.jpg",
+          "hash": "large_duplicating_palestine_img_a7a16451de",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "path": null,
+          "width": 1000,
+          "height": 667,
+          "size": 193.3,
+          "sizeInBytes": 193297,
+          "url": "/uploads/large_duplicating_palestine_img_a7a16451de.jpg"
+        }
+      },
+      "hash": "duplicating_palestine_img_a7a16451de",
+      "ext": ".jpg",
+      "mime": "image/jpeg",
+      "size": 1396,
+      "url": "/uploads/duplicating_palestine_img_a7a16451de.jpg",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "createdAt": "2025-10-31T12:23:17.229Z",
+      "updatedAt": "2025-10-31T12:23:17.229Z",
+      "publishedAt": "2025-10-31T12:23:17.229Z"
+    }
+  },
+  "meta": {}
+}
