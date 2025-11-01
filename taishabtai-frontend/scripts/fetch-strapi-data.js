@@ -17,7 +17,9 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 
 async function fetchData(endpoint) {
 	try {
-		const response = await fetch(`${STRAPI_API_URL}${endpoint}`);
+		// Build full URL - endpoint may already have query params
+		const url = `${STRAPI_API_URL}${endpoint}`;
+		const response = await fetch(url);
 		if (!response.ok) {
 			throw new Error(`Failed to fetch ${endpoint}: ${response.statusText}`);
 		}
@@ -80,6 +82,19 @@ async function downloadAllImages(data) {
 			if (imageUrl) {
 				imagesToDownload.add(imageUrl);
 			}
+
+			// Extract images from content blocks
+			const content = page.attributes?.content || page.content;
+			if (content && Array.isArray(content)) {
+				for (const block of content) {
+					if (block.__component === 'image.image-block' && block.image) {
+						const blockImageUrl = extractImageUrl(block.image);
+						if (blockImageUrl) {
+							imagesToDownload.add(blockImageUrl);
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -104,14 +119,34 @@ async function main() {
 	console.log('🚀 Fetching data from Strapi...\n');
 
 	try {
-		// Fetch pages
-		console.log('Fetching pages...');
-		const pages = await fetchData('/pages?populate=*');
+		// Fetch pages - first get list, then fetch each with proper population
+		console.log('Fetching pages list...');
+		const pagesList = await fetchData('/pages');
+
+		console.log(`Fetching detailed data for ${pagesList.data?.length || 0} pages...`);
+		const pagesWithContent = {
+			data: [],
+			meta: pagesList.meta
+		};
+
+		// Fetch each page individually with nested population
+		for (const page of pagesList.data) {
+			try {
+				const detailedPage = await fetchData(`/pages/${page.documentId}?populate%5Bcontent%5D%5Bpopulate%5D=*&populate%5Bimage%5D=*`);
+				pagesWithContent.data.push(detailedPage.data);
+			} catch (error) {
+				console.warn(`  ⚠️  Could not fetch nested data for ${page.title || page.documentId}, using basic data`);
+				// Fallback to basic page data
+				const basicPage = await fetchData(`/pages/${page.documentId}?populate=*`);
+				pagesWithContent.data.push(basicPage.data);
+			}
+		}
+
 		fs.writeFileSync(
 			path.join(OUTPUT_DIR, 'pages.json'),
-			JSON.stringify(pages, null, 2)
+			JSON.stringify(pagesWithContent, null, 2)
 		);
-		console.log(`✓ Saved ${pages.data?.length || 0} pages to pages.json`);
+		console.log(`✓ Saved ${pagesWithContent.data?.length || 0} pages to pages.json`);
 
 		// Fetch site settings
 		console.log('Fetching site settings...');

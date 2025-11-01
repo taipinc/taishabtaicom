@@ -1,38 +1,6 @@
 {
   "data": [
     {
-      "id": 26,
-      "documentId": "ra53bjx5vje5d46bxubljno1",
-      "title": "Can a Self-Driving Car Navigate an Apartheid Road?",
-      "slug": "can a self-driving car",
-      "customCSS": null,
-      "createdAt": "2025-10-31T01:56:31.946Z",
-      "updatedAt": "2025-10-31T01:58:58.381Z",
-      "publishedAt": "2025-10-31T01:58:58.390Z",
-      "years": null,
-      "subtitle": null,
-      "group": "Ongoing",
-      "order": null,
-      "image": null,
-      "content": []
-    },
-    {
-      "id": 33,
-      "documentId": "w4rcaung3k6qjskp8jjxakgi",
-      "title": "If the Fire within Our Eyes",
-      "slug": "If the Fire within Our Eyes",
-      "customCSS": null,
-      "createdAt": "2025-10-31T02:08:35.031Z",
-      "updatedAt": "2025-10-31T02:17:11.726Z",
-      "publishedAt": "2025-10-31T02:17:11.735Z",
-      "years": "2023",
-      "subtitle": null,
-      "group": "Selected Works",
-      "order": 1,
-      "image": null,
-      "content": []
-    },
-    {
       "id": 34,
       "documentId": "qm81d8pn16jnp7zyp9gxsj0v",
       "title": "Duplicating Palestine",
@@ -123,13 +91,43 @@
         "ext": ".jpeg",
         "mime": "image/jpeg",
         "size": 1349.32,
-        "url": "/uploads/cha_001_printed_f51895ed7b.jpeg",
+        "url": "/images/optimized/cha_001_printed_f51895ed7b-original.jpeg",
         "previewUrl": null,
         "provider": "local",
         "provider_metadata": null,
         "createdAt": "2025-07-07T02:06:07.656Z",
         "updatedAt": "2025-07-07T02:06:07.656Z",
-        "publishedAt": "2025-07-07T02:06:07.656Z"
+        "publishedAt": "2025-07-07T02:06:07.656Z",
+        "responsive": {
+          "srcset": [
+            {
+              "url": "/images/optimized/cha_001_printed_f51895ed7b-640w.jpeg",
+              "width": 640,
+              "size": 72776
+            },
+            {
+              "url": "/images/optimized/cha_001_printed_f51895ed7b-1024w.jpeg",
+              "width": 1024,
+              "size": 189146
+            },
+            {
+              "url": "/images/optimized/cha_001_printed_f51895ed7b-1920w.jpeg",
+              "width": 1920,
+              "size": 606338
+            },
+            {
+              "url": "/images/optimized/cha_001_printed_f51895ed7b-2560w.jpeg",
+              "width": 2560,
+              "size": 947152
+            },
+            {
+              "url": "/images/optimized/cha_001_printed_f51895ed7b-original.jpeg",
+              "width": 3000,
+              "size": 1178120
+            }
+          ],
+          "sizes": "100vw"
+        }
       },
       "content": []
     },
@@ -208,13 +206,43 @@
         "ext": ".jpg",
         "mime": "image/jpeg",
         "size": 1518.91,
-        "url": "/uploads/IMG_1338_S_2538fffd6e.jpg",
+        "url": "/images/optimized/IMG_1338_S_2538fffd6e-original.jpg",
         "previewUrl": null,
         "provider": "local",
         "provider_metadata": null,
         "createdAt": "2025-07-07T02:17:53.041Z",
         "updatedAt": "2025-07-07T02:32:28.199Z",
-        "publishedAt": "2025-07-07T02:17:53.042Z"
+        "publishedAt": "2025-07-07T02:17:53.042Z",
+        "responsive": {
+          "srcset": [
+            {
+              "url": "/images/optimized/IMG_1338_S_2538fffd6e-640w.jpg",
+              "width": 640,
+              "size": 84730
+            },
+            {
+              "url": "/images/optimized/IMG_1338_S_2538fffd6e-1024w.jpg",
+              "width": 1024,
+              "size": 228238
+            },
+            {
+              "url": "/images/optimized/IMG_1338_S_2538fffd6e-1920w.jpg",
+              "width": 1920,
+              "size": 759166
+            },
+            {
+              "url": "/images/optimized/IMG_1338_S_2538fffd6e-2560w.jpg",
+              "width": 2560,
+              "size": 1187376
+            },
+            {
+              "url": "/images/optimized/IMG_1338_S_2538fffd6e-original.jpg",
+              "width": 3000,
+              "size": 1388640
+            }
+          ],
+          "sizes": "100vw"
+        }
       },
       "content": []
     },
@@ -459,14 +487,14 @@
       "content": []
     },
     {
-      "id": 85,
+      "id": 86,
       "documentId": "yj08v2d80dlu6v74wb2b0qc3",
       "title": "An Abridged Draft for a Letter to Leila Khaled",
       "slug": "abridged",
       "customCSS": null,
       "createdAt": "2025-07-07T00:56:13.442Z",
-      "updatedAt": "2025-11-01T04:28:07.435Z",
-      "publishedAt": "2025-11-01T04:28:07.445Z",
+      "updatedAt": "2025-11-01T17:54:36.266Z",
+      "publishedAt": "2025-11-01T17:54:36.277Z",
       "years": "2022",
       "subtitle": null,
       "group": "Selected Works",
@@ -521,18 +549,33 @@
         "ext": ".jpg",
         "mime": "image/jpeg",
         "size": 99.37,
-        "url": "/uploads/DSC_0286_S_beb696747c.jpg",
+        "url": "/images/optimized/DSC_0286_S_beb696747c-original.jpg",
         "previewUrl": null,
         "provider": "local",
         "provider_metadata": null,
         "createdAt": "2025-10-30T16:41:23.437Z",
         "updatedAt": "2025-10-30T16:41:32.391Z",
-        "publishedAt": "2025-10-30T16:41:23.437Z"
+        "publishedAt": "2025-10-30T16:41:23.437Z",
+        "responsive": {
+          "srcset": [
+            {
+              "url": "/images/optimized/DSC_0286_S_beb696747c-640w.jpg",
+              "width": 640,
+              "size": 45946
+            },
+            {
+              "url": "/images/optimized/DSC_0286_S_beb696747c-original.jpg",
+              "width": 900,
+              "size": 77464
+            }
+          ],
+          "sizes": "100vw"
+        }
       },
       "content": [
         {
           "__component": "text.big-text",
-          "id": 7,
+          "id": 8,
           "text": [
             {
               "type": "paragraph",
@@ -544,7 +587,7 @@
                 },
                 {
                   "type": "text",
-                  "text": " reconstruct the landscape of Palestine before the Nakba, as it is depicted in the Palmach Aerial Photographs Collection. It uses a flight simulator to create a flight tour of the reconstructed collection, superimposing it on the satellite views of modern Israel."
+                  "text": " reconstructs the Palestinian landscape before the 1948 Nakba as recorded in the Palmach Aerial Photographs Collection. Using a flight simulator, the project stitches and geolocates hundreds of reconnaissance images, charting a continuous route over the reconstructed terrain while aligning it with contemporary satellite views. The tour moves between past and present, exposing seams, absences, and the infrastructural transformations that have reshaped the ground."
                 }
               ]
             }
@@ -552,19 +595,19 @@
         },
         {
           "__component": "video.video-embed",
-          "id": 15,
+          "id": 16,
           "url": "https://vimeo.com/879235196/9aa86b97fc"
         },
         {
           "__component": "text.two-columns",
-          "id": 6,
+          "id": 7,
           "text": [
             {
               "type": "paragraph",
               "children": [
                 {
                   "type": "text",
-                  "text": "The Palmach Aerial Photographs Collection includes more than 600 images, taken by the Zionist Paramilitary organization during the 1947-1948 civil war in Palestine, before the Palestinian Nakba (lit. catastrophe, the displacement of Palestinian from their homeland)."
+                  "text": "Made from materials produced for military intelligence, the archive is redeployed here as a tool for public memory. Held across Israeli institutions and often difficult to access—especially for Palestinians—the collection offers a rare, high-resolution record of villages, fields, and roads on the brink of erasure. By restoring navigability to these images, the work shifts aerial vision from surveillance toward a practice of re-inscribing what has been displaced."
                 }
               ]
             },
@@ -582,11 +625,240 @@
               "children": [
                 {
                   "type": "text",
-                  "text": "While the collection was created in an aerial reconnaissance effort, today it provides a rare documentation of Palestinian landscape – depicted on the verge of its imminent erasure. The collection is stored within three archives in Israel, yet it is largely inaccessible for viewing, especially for Palestinians."
+                  "text": "Conceived in response to the cancellation of Leila Khaled’s participation in a virtual San Francisco State University event in September 2020, the video takes the form of a letter and an invitation: for Khaled to pilot the flight in the space from which she is routinely barred. It addresses intertwined restrictions on communication, vision, and movement, proposing virtual navigation as a modest counter to imposed limits on who may see, and who may travel."
                 }
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "documentId": "ra53bjx5vje5d46bxubljno1",
+      "title": "Can a Self-Driving Car Navigate an Apartheid Road?",
+      "slug": "can a self-driving car",
+      "customCSS": null,
+      "createdAt": "2025-10-31T01:56:31.946Z",
+      "updatedAt": "2025-11-01T18:34:00.698Z",
+      "publishedAt": "2025-11-01T18:34:00.704Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Ongoing",
+      "order": null,
+      "image": {
+        "id": 5,
+        "documentId": "yjwsfbp7w8rtw6ia2xv2i6xo",
+        "name": "_FINAL_01_07_19;29 copy.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 2707,
+        "height": 2160,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail__FINAL_01_07_19;29 copy.jpg",
+            "hash": "thumbnail_FINAL_01_07_19_29_copy_98683f000f",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 195,
+            "height": 156,
+            "size": 4.46,
+            "sizeInBytes": 4459,
+            "url": "/uploads/thumbnail_FINAL_01_07_19_29_copy_98683f000f.jpg"
+          },
+          "large": {
+            "name": "large__FINAL_01_07_19;29 copy.jpg",
+            "hash": "large_FINAL_01_07_19_29_copy_98683f000f",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 1000,
+            "height": 798,
+            "size": 57.76,
+            "sizeInBytes": 57760,
+            "url": "/uploads/large_FINAL_01_07_19_29_copy_98683f000f.jpg"
+          },
+          "medium": {
+            "name": "medium__FINAL_01_07_19;29 copy.jpg",
+            "hash": "medium_FINAL_01_07_19_29_copy_98683f000f",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 750,
+            "height": 599,
+            "size": 33.28,
+            "sizeInBytes": 33277,
+            "url": "/uploads/medium_FINAL_01_07_19_29_copy_98683f000f.jpg"
+          },
+          "small": {
+            "name": "small__FINAL_01_07_19;29 copy.jpg",
+            "hash": "small_FINAL_01_07_19_29_copy_98683f000f",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 500,
+            "height": 399,
+            "size": 17.05,
+            "sizeInBytes": 17053,
+            "url": "/uploads/small_FINAL_01_07_19_29_copy_98683f000f.jpg"
+          }
+        },
+        "hash": "FINAL_01_07_19_29_copy_98683f000f",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 498.81,
+        "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2025-11-01T18:32:54.048Z",
+        "updatedAt": "2025-11-01T19:44:53.651Z",
+        "publishedAt": "2025-11-01T18:32:54.048Z",
+        "responsive": {
+          "srcset": [
+            {
+              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-640w.jpg",
+              "width": 640,
+              "size": 11852
+            },
+            {
+              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1024w.jpg",
+              "width": 1024,
+              "size": 23654
+            },
+            {
+              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1920w.jpg",
+              "width": 1920,
+              "size": 98864
+            },
+            {
+              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-2560w.jpg",
+              "width": 2560,
+              "size": 172204
+            },
+            {
+              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
+              "width": 2707,
+              "size": 217918
+            }
+          ],
+          "sizes": "100vw"
+        }
+      },
+      "content": [
+        {
+          "__component": "text.big-text",
+          "id": 12,
+          "text": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Can a Self-Driving Car Navigate an Apartheid Road?",
+                  "italic": true
+                },
+                {
+                  "type": "text",
+                  "text": " is a multi-channel video essay examining how autonomous vehicles navigate politically contested infrastructures, focusing on the segregated Israeli road system in Palestine. The work treats the self-driving car as both a technology of inquiry and a series of conceptual parallels for understanding how people navigate systems of discrimination and control."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "video.video-embed",
+          "id": 18,
+          "url": "https://vimeo.com/1094254459"
+        },
+        {
+          "__component": "text.two-columns",
+          "id": 9,
+          "text": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "At the heart of the project is the concept of the autonomous vehicle as an \"Archive on Wheels\"—a traveling apparatus that continuously captures, processes, and acts upon images of its surroundings. Just as photography requires positioning oneself in relation to a subject, the car's primary function of \"ego-localization\" demands it determine where it stands before it can move. The work examines algorithmic processes—perception, attention, prediction, and decision-making—as frameworks for understanding how identity shapes navigation through segregated space."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "---"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "The project investigates how machine learning systems attempt to model the nuanced knowledge required to navigate apartheid infrastructure—knowledge deeply tied to identity and learned through lived experience. It asks: what identity will an autonomous system embody when navigating segregated territories, and what are the implications as these technologies are exported globally? By examining self-driving technologies in an extreme political context, the work reveals how systems of efficiency and safety encode and perpetuate patterns of discrimination and control."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "documentId": "w4rcaung3k6qjskp8jjxakgi",
+      "title": "If the Fire within Our Eyes",
+      "slug": "If the Fire within Our Eyes",
+      "customCSS": null,
+      "createdAt": "2025-10-31T02:08:35.031Z",
+      "updatedAt": "2025-11-01T19:44:57.574Z",
+      "publishedAt": "2025-11-01T19:44:57.578Z",
+      "years": "2023",
+      "subtitle": null,
+      "group": "Selected Works",
+      "order": 1,
+      "image": null,
+      "content": [
+        {
+          "__component": "image.image-block",
+          "id": 10,
+          "image": {
+            "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
+            "name": "FINAL_01_07_19_29_copy_98683f000f.jpg",
+            "responsive": {
+              "srcset": [
+                {
+                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-640w.jpg",
+                  "width": 640,
+                  "size": 11852
+                },
+                {
+                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1024w.jpg",
+                  "width": 1024,
+                  "size": 23654
+                },
+                {
+                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1920w.jpg",
+                  "width": 1920,
+                  "size": 98864
+                },
+                {
+                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-2560w.jpg",
+                  "width": 2560,
+                  "size": 172204
+                },
+                {
+                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
+                  "width": 2707,
+                  "size": 217918
+                }
+              ],
+              "sizes": "100vw"
+            }
+          }
         }
       ]
     }

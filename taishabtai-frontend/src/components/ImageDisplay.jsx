@@ -1,10 +1,16 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {resolveMediaUrl} from '../utils/media';
+import ResponsiveImage from './ResponsiveImage';
 
 const ImageDisplay = ({page, fallbackImage}) => {
-	const pageImageUrl = resolveMediaUrl(page?.image);
+	// Keep the original image objects for ResponsiveImage
+	const pageImage = page?.image;
+	const desiredImage = pageImage || fallbackImage;
+
+	// For comparison and alt text, we still need URLs
+	const pageImageUrl = resolveMediaUrl(pageImage);
 	const fallbackImageUrl = resolveMediaUrl(fallbackImage);
-	const desiredImage = pageImageUrl || fallbackImageUrl;
+	const desiredImageUrl = pageImageUrl || fallbackImageUrl;
 
 	const [images, setImages] = useState([]);
 	const idRef = useRef(0);
@@ -36,7 +42,7 @@ const ImageDisplay = ({page, fallbackImage}) => {
 			return page?.title || 'Page image';
 		};
 
-		if (!desiredImage) {
+		if (!desiredImageUrl) {
 			setImages((prevImages) =>
 				prevImages.length
 					? prevImages.map((image) =>
@@ -49,13 +55,13 @@ const ImageDisplay = ({page, fallbackImage}) => {
 
 		setImages((prevImages) => {
 			const existingIndex = prevImages.findIndex(
-				(image) => image.src === desiredImage
+				(image) => image.srcUrl === desiredImageUrl
 			);
 
 			if (existingIndex !== -1) {
 				return prevImages.map((image, index) =>
 					index === existingIndex
-						? {...image, visible: true, alt: getAltText(desiredImage)}
+						? {...image, visible: true, alt: getAltText(desiredImageUrl)}
 						: image.visible
 							? {...image, visible: false}
 							: image
@@ -65,8 +71,9 @@ const ImageDisplay = ({page, fallbackImage}) => {
 			const newKey = `image-${idRef.current++}`;
 			const newImage = {
 				key: newKey,
-				src: desiredImage,
-				alt: getAltText(desiredImage),
+				imageObject: desiredImage, // Store the full image object
+				srcUrl: desiredImageUrl, // Store URL for comparison
+				alt: getAltText(desiredImageUrl),
 				visible: false,
 			};
 
@@ -87,7 +94,7 @@ const ImageDisplay = ({page, fallbackImage}) => {
 
 			return nextImages;
 		});
-	}, [desiredImage, fallbackImageUrl, page, pageImageUrl]);
+	}, [desiredImage, desiredImageUrl, fallbackImageUrl, page, pageImageUrl]);
 
 	const handleTransitionEnd = (key, visible) => {
 		if (visible) return;
@@ -99,13 +106,15 @@ const ImageDisplay = ({page, fallbackImage}) => {
 	return (
 		<div className='image-display'>
 			{images.map((image) => (
-				<img
+				<ResponsiveImage
 					key={image.key}
-					src={image.src}
+					image={image.imageObject}
 					alt={image.alt}
+					sizes='100vw'
 					className={`image-display-img${
 						image.visible ? ' image-display-img-visible' : ''
 					}`}
+					style={{}}
 					onTransitionEnd={(event) => {
 						if (event.propertyName === 'opacity') {
 							handleTransitionEnd(image.key, image.visible);

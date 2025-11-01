@@ -1,5 +1,6 @@
 import React from 'react';
 import {resolveMediaUrl} from '../utils/media';
+import ResponsiveImage from './ResponsiveImage';
 
 const PageContent = ({page}) => {
 	return (
@@ -67,9 +68,10 @@ function renderContent(contentBlocks) {
 				>
 					{imageUrl ? (
 						<>
-							<img
-								src={imageUrl}
+							<ResponsiveImage
+								image={block.image}
 								alt={block.caption || 'Image'}
+								sizes='(min-width: 1024px) 800px, 100vw'
 								style={{maxWidth: '100%', height: 'auto'}}
 							/>
 							{block.caption && (

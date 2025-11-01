@@ -1,1 +1,3 @@
 .vercel
+.image-cache.json
+public/images/optimized/

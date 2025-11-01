@@ -6,6 +6,10 @@ export const resolveMediaUrl = (media) => {
 		if (media.startsWith('http')) {
 			return media;
 		}
+		// If it's already a relative path starting with /, use as-is
+		if (media.startsWith('/')) {
+			return media;
+		}
 		// Extract filename and point to local images folder
 		const filename = media.split('/').pop();
 		return `/images/${filename}`;
@@ -22,7 +26,12 @@ export const resolveMediaUrl = (media) => {
 		return url;
 	}
 
-	// Extract filename and point to local images folder
+	// If it's already a relative path starting with /, use as-is
+	if (url.startsWith('/')) {
+		return url;
+	}
+
+	// Extract filename and point to local images folder (legacy Strapi URLs)
 	const filename = url.split('/').pop();
 	return `/images/${filename}`;
 };

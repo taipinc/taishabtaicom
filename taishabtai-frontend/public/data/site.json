@@ -67,13 +67,43 @@
       "ext": ".jpg",
       "mime": "image/jpeg",
       "size": 1396,
-      "url": "/uploads/duplicating_palestine_img_a7a16451de.jpg",
+      "url": "/images/optimized/duplicating_palestine_img_a7a16451de-original.jpg",
       "previewUrl": null,
       "provider": "local",
       "provider_metadata": null,
       "createdAt": "2025-10-31T12:23:17.229Z",
       "updatedAt": "2025-10-31T12:23:17.229Z",
-      "publishedAt": "2025-10-31T12:23:17.229Z"
+      "publishedAt": "2025-10-31T12:23:17.229Z",
+      "responsive": {
+        "srcset": [
+          {
+            "url": "/images/optimized/duplicating_palestine_img_a7a16451de-640w.jpg",
+            "width": 640,
+            "size": 80228
+          },
+          {
+            "url": "/images/optimized/duplicating_palestine_img_a7a16451de-1024w.jpg",
+            "width": 1024,
+            "size": 202094
+          },
+          {
+            "url": "/images/optimized/duplicating_palestine_img_a7a16451de-1920w.jpg",
+            "width": 1920,
+            "size": 607580
+          },
+          {
+            "url": "/images/optimized/duplicating_palestine_img_a7a16451de-2560w.jpg",
+            "width": 2560,
+            "size": 932640
+          },
+          {
+            "url": "/images/optimized/duplicating_palestine_img_a7a16451de-original.jpg",
+            "width": 3000,
+            "size": 1136134
+          }
+        ],
+        "sizes": "100vw"
+      }
     }
   },
   "meta": {}
