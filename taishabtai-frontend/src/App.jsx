@@ -74,7 +74,8 @@ function App() {
 		if (!pages.length) return;
 
 		const loadPageFromURL = () => {
-			const slug = window.location.pathname.slice(1).toLowerCase();
+			// Decode URL to handle spaces and special characters
+			const slug = decodeURIComponent(window.location.pathname.slice(1)).toLowerCase();
 
 			if (slug) {
 				const match = pages.find((page) => {
