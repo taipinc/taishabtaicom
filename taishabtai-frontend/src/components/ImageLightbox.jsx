@@ -10,6 +10,14 @@ import ResponsiveImage from './ResponsiveImage';
  */
 const ImageLightbox = ({images, initialIndex = 0, onClose}) => {
 	const [currentIndex, setCurrentIndex] = useState(initialIndex);
+	const [isClosing, setIsClosing] = useState(false);
+
+	const handleClose = useCallback(() => {
+		setIsClosing(true);
+		setTimeout(() => {
+			onClose();
+		}, 200); // Match animation duration
+	}, [onClose]);
 
 	const handlePrevious = useCallback(() => {
 		setCurrentIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1));
@@ -22,14 +30,14 @@ const ImageLightbox = ({images, initialIndex = 0, onClose}) => {
 	const handleKeyDown = useCallback(
 		(e) => {
 			if (e.key === 'Escape') {
-				onClose();
+				handleClose();
 			} else if (e.key === 'ArrowLeft') {
 				handlePrevious();
 			} else if (e.key === 'ArrowRight') {
 				handleNext();
 			}
 		},
-		[onClose, handlePrevious, handleNext]
+		[handleClose, handlePrevious, handleNext]
 	);
 
 	useEffect(() => {
@@ -46,10 +54,13 @@ const ImageLightbox = ({images, initialIndex = 0, onClose}) => {
 	const currentImage = images[currentIndex];
 
 	return (
-		<div className='lightbox-overlay' onClick={onClose}>
+		<div
+			className={`lightbox-overlay ${isClosing ? 'lightbox-closing' : ''}`}
+			onClick={handleClose}
+		>
 			<button
 				className='lightbox-close'
-				onClick={onClose}
+				onClick={handleClose}
 				aria-label='Close lightbox'
 			>
 				×

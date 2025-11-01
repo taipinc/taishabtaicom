@@ -183,6 +183,25 @@ function updatePagesData(pagesData, processedImages) {
 						}
 					}
 				}
+
+				// Update gallery images
+				if (block.__component === 'image.image-gallery' && block.images && Array.isArray(block.images)) {
+					block.images = block.images.map((image) => {
+						const imageUrl = extractImageUrl(image);
+						if (imageUrl) {
+							const filename = imageUrl.split('/').pop();
+							if (processedImages[filename]) {
+								updateCount++;
+								return updateImageObject(
+									image,
+									processedImages[filename],
+									filename
+								);
+							}
+						}
+						return image;
+					});
+				}
 			});
 		}
 	});

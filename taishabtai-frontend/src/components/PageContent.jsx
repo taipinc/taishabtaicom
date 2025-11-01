@@ -99,8 +99,7 @@ function renderContent(contentBlocks, openLightbox) {
 								<ResponsiveImage
 									image={block.image}
 									alt={block.caption || 'Image'}
-									sizes='(min-width: 1024px) 800px, 100vw'
-									style={{maxWidth: '100%', height: 'auto'}}
+									sizes='100vw'
 								/>
 							</div>
 							{block.caption && (
