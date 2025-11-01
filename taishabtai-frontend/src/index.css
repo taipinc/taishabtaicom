@@ -138,6 +138,51 @@ hr {
   max-width: 65ch; /* Optimal reading width */
 }
 
+/* Large Text Block */
+.large-text-block {
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.large-text-block p {
+  font-size: clamp(24px, calc(var(--vh) * 2.8), 36px);
+  line-height: 1.4;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* Two Column Block */
+.two-column-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.two-column-block .column-left,
+.two-column-block .column-right {
+  font-size: clamp(16px, calc(var(--vh) * 2.0), 22px);
+}
+
+.two-column-block .column-full {
+  grid-column: 1 / -1;
+}
+
+.two-column-block p {
+  margin-bottom: 1.5rem;
+  max-width: none;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 768px) {
+  .two-column-block {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
 .page-header {
   display: flex;
   align-items: baseline;
