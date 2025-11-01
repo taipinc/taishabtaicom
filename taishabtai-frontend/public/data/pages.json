@@ -49,133 +49,6 @@
       "content": []
     },
     {
-      "id": 35,
-      "documentId": "yj08v2d80dlu6v74wb2b0qc3",
-      "title": "An Abridged Draft for a Letter to Leila Khaled",
-      "slug": "abridged",
-      "customCSS": null,
-      "createdAt": "2025-07-07T00:56:13.442Z",
-      "updatedAt": "2025-10-31T02:17:56.028Z",
-      "publishedAt": "2025-10-31T02:17:56.035Z",
-      "years": "2022",
-      "subtitle": null,
-      "group": "Selected Works",
-      "order": 3,
-      "image": {
-        "id": 3,
-        "documentId": "wwju08pxik3f6ylkocszf7r4",
-        "name": "_DSC0286_S.jpg",
-        "alternativeText": null,
-        "caption": null,
-        "width": 900,
-        "height": 600,
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail__DSC0286_S.jpg",
-            "hash": "thumbnail_DSC_0286_S_beb696747c",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "path": null,
-            "width": 234,
-            "height": 156,
-            "size": 9.78,
-            "sizeInBytes": 9781,
-            "url": "/uploads/thumbnail_DSC_0286_S_beb696747c.jpg"
-          },
-          "small": {
-            "name": "small__DSC0286_S.jpg",
-            "hash": "small_DSC_0286_S_beb696747c",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "path": null,
-            "width": 500,
-            "height": 333,
-            "size": 37.81,
-            "sizeInBytes": 37814,
-            "url": "/uploads/small_DSC_0286_S_beb696747c.jpg"
-          },
-          "medium": {
-            "name": "medium__DSC0286_S.jpg",
-            "hash": "medium_DSC_0286_S_beb696747c",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "path": null,
-            "width": 750,
-            "height": 500,
-            "size": 76.24,
-            "sizeInBytes": 76241,
-            "url": "/uploads/medium_DSC_0286_S_beb696747c.jpg"
-          }
-        },
-        "hash": "DSC_0286_S_beb696747c",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 99.37,
-        "url": "/uploads/DSC_0286_S_beb696747c.jpg",
-        "previewUrl": null,
-        "provider": "local",
-        "provider_metadata": null,
-        "createdAt": "2025-10-30T16:41:23.437Z",
-        "updatedAt": "2025-10-30T16:41:32.391Z",
-        "publishedAt": "2025-10-30T16:41:23.437Z"
-      },
-      "content": [
-        {
-          "__component": "text.text-block",
-          "id": 21,
-          "text": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "An Abridged Draft for a Letter to Leila Khaled reconstruct the landscape of Palestine before the Nakba, as it is depicted in the Palmach Aerial Photographs Collection. It uses a flight simulator to create a flight tour of the reconstructed collection, superimposing it on the satellite views of modern Israel."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__component": "text.text-block",
-          "id": 22,
-          "text": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "The Palmach Aerial Photographs Collection includes more than 600 images, taken by the Zionist Paramilitary organization during the 1947-1948 civil war in Palestine, before the Palestinian Nakba (lit. catastrophe, the displacement of Palestinian from their homeland)."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "While the collection was created in an aerial reconnaissance effort, today it provides a rare documentation of Palestinian landscape – depicted on the verge of its imminent erasure. The collection is stored within three archives in Israel, yet it is largely inaccessible for viewing, especially for Palestinians."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "text": ""
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__component": "video.video-embed",
-          "id": 8,
-          "url": "https://vimeo.com/879235196"
-        }
-      ]
-    },
-    {
       "id": 36,
       "documentId": "e5e0k8sxia8fakled2fv5tee",
       "title": "On the Optics of Mount Scopus",
@@ -584,6 +457,133 @@
       "order": 10,
       "image": null,
       "content": []
+    },
+    {
+      "id": 79,
+      "documentId": "yj08v2d80dlu6v74wb2b0qc3",
+      "title": "An Abridged Draft for a Letter to Leila Khaled",
+      "slug": "abridged",
+      "customCSS": null,
+      "createdAt": "2025-07-07T00:56:13.442Z",
+      "updatedAt": "2025-11-01T03:54:03.307Z",
+      "publishedAt": "2025-11-01T03:54:03.318Z",
+      "years": "2022",
+      "subtitle": null,
+      "group": "Selected Works",
+      "order": 3,
+      "image": {
+        "id": 3,
+        "documentId": "wwju08pxik3f6ylkocszf7r4",
+        "name": "_DSC0286_S.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 900,
+        "height": 600,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail__DSC0286_S.jpg",
+            "hash": "thumbnail_DSC_0286_S_beb696747c",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 234,
+            "height": 156,
+            "size": 9.78,
+            "sizeInBytes": 9781,
+            "url": "/uploads/thumbnail_DSC_0286_S_beb696747c.jpg"
+          },
+          "small": {
+            "name": "small__DSC0286_S.jpg",
+            "hash": "small_DSC_0286_S_beb696747c",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 500,
+            "height": 333,
+            "size": 37.81,
+            "sizeInBytes": 37814,
+            "url": "/uploads/small_DSC_0286_S_beb696747c.jpg"
+          },
+          "medium": {
+            "name": "medium__DSC0286_S.jpg",
+            "hash": "medium_DSC_0286_S_beb696747c",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 750,
+            "height": 500,
+            "size": 76.24,
+            "sizeInBytes": 76241,
+            "url": "/uploads/medium_DSC_0286_S_beb696747c.jpg"
+          }
+        },
+        "hash": "DSC_0286_S_beb696747c",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 99.37,
+        "url": "/uploads/DSC_0286_S_beb696747c.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2025-10-30T16:41:23.437Z",
+        "updatedAt": "2025-10-30T16:41:32.391Z",
+        "publishedAt": "2025-10-30T16:41:23.437Z"
+      },
+      "content": [
+        {
+          "__component": "text.text-block",
+          "id": 23,
+          "text": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "An Abridged Draft for a Letter to Leila Khaled reconstruct the landscape of Palestine before the Nakba, as it is depicted in the Palmach Aerial Photographs Collection. It uses a flight simulator to create a flight tour of the reconstructed collection, superimposing it on the satellite views of modern Israel."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "text.text-block",
+          "id": 24,
+          "text": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "The Palmach Aerial Photographs Collection includes more than 600 images, taken by the Zionist Paramilitary organization during the 1947-1948 civil war in Palestine, before the Palestinian Nakba (lit. catastrophe, the displacement of Palestinian from their homeland)."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "While the collection was created in an aerial reconnaissance effort, today it provides a rare documentation of Palestinian landscape – depicted on the verge of its imminent erasure. The collection is stored within three archives in Israel, yet it is largely inaccessible for viewing, especially for Palestinians."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "video.video-embed",
+          "id": 9,
+          "url": "https://vimeo.com/879235196/9aa86b97fc"
+        }
+      ]
     }
   ],
   "meta": {
