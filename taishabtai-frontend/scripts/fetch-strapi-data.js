@@ -158,7 +158,7 @@ async function main() {
 		console.log('✓ Saved site settings to site.json');
 
 		// Download all images
-		await downloadAllImages({ pages, site });
+		await downloadAllImages({ pages: pagesWithContent, site });
 
 		console.log('\n✅ Data export complete!');
 		console.log(`📁 Data saved to: ${OUTPUT_DIR}`);

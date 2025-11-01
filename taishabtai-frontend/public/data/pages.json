@@ -596,7 +596,8 @@
         {
           "__component": "video.video-embed",
           "id": 16,
-          "url": "https://vimeo.com/879235196/9aa86b97fc"
+          "url": "https://vimeo.com/879235196/9aa86b97fc",
+          "caption": null
         },
         {
           "__component": "text.two-columns",
@@ -770,7 +771,8 @@
         {
           "__component": "video.video-embed",
           "id": 18,
-          "url": "https://vimeo.com/1094254459"
+          "url": "https://vimeo.com/1094254459",
+          "caption": null
         },
         {
           "__component": "text.two-columns",
@@ -808,14 +810,14 @@
       ]
     },
     {
-      "id": 91,
+      "id": 92,
       "documentId": "w4rcaung3k6qjskp8jjxakgi",
       "title": "If the Fire within Our Eyes",
       "slug": "If the Fire within Our Eyes",
       "customCSS": null,
       "createdAt": "2025-10-31T02:08:35.031Z",
-      "updatedAt": "2025-11-01T19:44:57.574Z",
-      "publishedAt": "2025-11-01T19:44:57.578Z",
+      "updatedAt": "2025-11-01T20:30:40.829Z",
+      "publishedAt": "2025-11-01T20:30:40.842Z",
       "years": "2023",
       "subtitle": null,
       "group": "Selected Works",
@@ -824,41 +826,18 @@
       "content": [
         {
           "__component": "image.image-block",
-          "id": 10,
-          "image": {
-            "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
-            "name": "FINAL_01_07_19_29_copy_98683f000f.jpg",
-            "responsive": {
-              "srcset": [
-                {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-640w.jpg",
-                  "width": 640,
-                  "size": 11852
-                },
-                {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1024w.jpg",
-                  "width": 1024,
-                  "size": 23654
-                },
-                {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1920w.jpg",
-                  "width": 1920,
-                  "size": 98864
-                },
-                {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-2560w.jpg",
-                  "width": 2560,
-                  "size": 172204
-                },
-                {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
-                  "width": 2707,
-                  "size": 217918
-                }
-              ],
-              "sizes": "100vw"
-            }
-          }
+          "id": 11,
+          "enableFullscreen": null,
+          "caption": null
+        },
+        {
+          "__component": "image.image-gallery",
+          "id": 2,
+          "layout": "justify",
+          "rows": 3,
+          "gutter": 8,
+          "enableFullscreen": true,
+          "caption": null
         }
       ]
     }

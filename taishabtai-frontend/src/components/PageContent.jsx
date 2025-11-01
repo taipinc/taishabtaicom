@@ -1,8 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {resolveMediaUrl} from '../utils/media';
 import ResponsiveImage from './ResponsiveImage';
+import ImageLightbox from './ImageLightbox';
+import JustifiedGallery from './JustifiedGallery';
 
 const PageContent = ({page}) => {
+	const [lightboxImages, setLightboxImages] = useState(null);
+	const [lightboxIndex, setLightboxIndex] = useState(0);
+
+	const openLightbox = (images, index = 0) => {
+		setLightboxImages(images);
+		setLightboxIndex(index);
+	};
+
+	const closeLightbox = () => {
+		setLightboxImages(null);
+		setLightboxIndex(0);
+	};
+
 	return (
 		<div className='main-content'>
 			{page ? (
@@ -14,14 +29,22 @@ const PageContent = ({page}) => {
 						) : null}
 					</div>
 					<hr />
-					<div>{renderContent(page.content)}</div>
+					<div>{renderContent(page.content, openLightbox)}</div>
 				</>
 			) : null}
+
+			{lightboxImages && (
+				<ImageLightbox
+					images={lightboxImages}
+					initialIndex={lightboxIndex}
+					onClose={closeLightbox}
+				/>
+			)}
 		</div>
 	);
 };
 
-function renderContent(contentBlocks) {
+function renderContent(contentBlocks, openLightbox) {
 	if (!contentBlocks) return null;
 
 	return contentBlocks.map((block, index) => {
@@ -60,6 +83,7 @@ function renderContent(contentBlocks) {
 
 		if (block.__component === 'image.image-block') {
 			const imageUrl = resolveMediaUrl(block.image);
+			const enableFullscreen = block.enableFullscreen !== false; // Default true
 
 			return (
 				<div
@@ -68,12 +92,17 @@ function renderContent(contentBlocks) {
 				>
 					{imageUrl ? (
 						<>
-							<ResponsiveImage
-								image={block.image}
-								alt={block.caption || 'Image'}
-								sizes='(min-width: 1024px) 800px, 100vw'
-								style={{maxWidth: '100%', height: 'auto'}}
-							/>
+							<div
+								onClick={enableFullscreen ? () => openLightbox([block.image], 0) : undefined}
+								style={{cursor: enableFullscreen ? 'pointer' : 'default'}}
+							>
+								<ResponsiveImage
+									image={block.image}
+									alt={block.caption || 'Image'}
+									sizes='(min-width: 1024px) 800px, 100vw'
+									style={{maxWidth: '100%', height: 'auto'}}
+								/>
+							</div>
 							{block.caption && (
 								<p className='image-caption'>{block.caption}</p>
 							)}
@@ -89,6 +118,53 @@ function renderContent(contentBlocks) {
 							No image uploaded
 						</div>
 					)}
+				</div>
+			);
+		}
+
+		if (block.__component === 'image.image-gallery') {
+			const {images, layout, rows, gutter, enableFullscreen, caption} = block;
+
+			if (!images || images.length === 0) {
+				return (
+					<div key={index} className='image-gallery-empty'>
+						No images in gallery
+					</div>
+				);
+			}
+
+			const handleImageClick = enableFullscreen !== false
+				? (imageIndex) => openLightbox(images, imageIndex)
+				: undefined;
+
+			return (
+				<div key={index} className='image-gallery-block'>
+					{layout === 'justify' ? (
+						<JustifiedGallery
+							images={images}
+							rows={rows || 3}
+							gutter={gutter || 8}
+							onImageClick={handleImageClick}
+						/>
+					) : (
+						// Fallback for other layouts (grid, masonry) - to be implemented
+						<div className='image-gallery-grid'>
+							{images.map((image, imgIndex) => (
+								<div
+									key={imgIndex}
+									onClick={handleImageClick ? () => handleImageClick(imgIndex) : undefined}
+									style={{cursor: handleImageClick ? 'pointer' : 'default'}}
+								>
+									<ResponsiveImage
+										image={image}
+										alt={image.alternativeText || `Image ${imgIndex + 1}`}
+										sizes='(min-width: 1024px) 33vw, 50vw'
+									/>
+								</div>
+							))}
+						</div>
+					)}
+					{caption && <p className='image-caption'>{caption}</p>}
 				</div>
 			);
 		}
