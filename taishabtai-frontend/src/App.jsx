@@ -121,6 +121,16 @@ function App() {
 		setHoveredPage(null);
 	}, []);
 
+	// Scroll to top when navigating between pages
+	useEffect(() => {
+		const mainContent = document.querySelector('.main-content');
+		if (mainContent) {
+			mainContent.scrollTop = 0;
+		}
+		// Also scroll window to top for good measure
+		window.scrollTo(0, 0);
+	}, [currentPage, isIndexPage]);
+
 	if (loading) {
 		return <div>Loading...</div>;
 	}
