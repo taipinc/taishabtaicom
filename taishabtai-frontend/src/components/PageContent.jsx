@@ -127,12 +127,16 @@ function normaliseVideoUrl(rawUrl) {
 	if (!url) return null;
 
 	const vimeoMatch = url.match(
-		/^https?:\/\/(?:www\.)?vimeo\.com\/(?:video\/)?(\d+)(?:|\/|\?.*)$/i
+		/^https?:\/\/(?:www\.)?vimeo\.com\/(?:video\/)?(\d+)(?:\/([a-f0-9]+))?(?:\?.*)?$/i
 	);
 	if (vimeoMatch) {
+		const videoId = vimeoMatch[1];
+		const privacyHash = vimeoMatch[2];
 		return {
 			type: 'embed',
-			src: `https://player.vimeo.com/video/${vimeoMatch[1]}`,
+			src: privacyHash
+				? `https://player.vimeo.com/video/${videoId}?h=${privacyHash}`
+				: `https://player.vimeo.com/video/${videoId}`,
 		};
 	}
 
