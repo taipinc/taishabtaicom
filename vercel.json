@@ -3,6 +3,10 @@
   "outputDirectory": "taishabtai-frontend/dist",
   "installCommand": "cd taishabtai-frontend && npm install",
   "framework": null,
-  "cleanUrls": true,
-  "trailingSlash": false
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
