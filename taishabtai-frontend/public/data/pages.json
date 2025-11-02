@@ -487,154 +487,6 @@
       "content": []
     },
     {
-      "id": 86,
-      "documentId": "yj08v2d80dlu6v74wb2b0qc3",
-      "title": "An Abridged Draft for a Letter to Leila Khaled",
-      "slug": "abridged",
-      "customCSS": null,
-      "createdAt": "2025-07-07T00:56:13.442Z",
-      "updatedAt": "2025-11-01T17:54:36.266Z",
-      "publishedAt": "2025-11-01T17:54:36.277Z",
-      "years": "2022",
-      "subtitle": null,
-      "group": "Selected Works",
-      "order": 3,
-      "image": {
-        "id": 3,
-        "documentId": "wwju08pxik3f6ylkocszf7r4",
-        "name": "_DSC0286_S.jpg",
-        "alternativeText": null,
-        "caption": null,
-        "width": 900,
-        "height": 600,
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail__DSC0286_S.jpg",
-            "hash": "thumbnail_DSC_0286_S_beb696747c",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "path": null,
-            "width": 234,
-            "height": 156,
-            "size": 9.78,
-            "sizeInBytes": 9781,
-            "url": "/uploads/thumbnail_DSC_0286_S_beb696747c.jpg"
-          },
-          "small": {
-            "name": "small__DSC0286_S.jpg",
-            "hash": "small_DSC_0286_S_beb696747c",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "path": null,
-            "width": 500,
-            "height": 333,
-            "size": 37.81,
-            "sizeInBytes": 37814,
-            "url": "/uploads/small_DSC_0286_S_beb696747c.jpg"
-          },
-          "medium": {
-            "name": "medium__DSC0286_S.jpg",
-            "hash": "medium_DSC_0286_S_beb696747c",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "path": null,
-            "width": 750,
-            "height": 500,
-            "size": 76.24,
-            "sizeInBytes": 76241,
-            "url": "/uploads/medium_DSC_0286_S_beb696747c.jpg"
-          }
-        },
-        "hash": "DSC_0286_S_beb696747c",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 99.37,
-        "url": "/images/optimized/DSC_0286_S_beb696747c-original.jpg",
-        "previewUrl": null,
-        "provider": "local",
-        "provider_metadata": null,
-        "createdAt": "2025-10-30T16:41:23.437Z",
-        "updatedAt": "2025-10-30T16:41:32.391Z",
-        "publishedAt": "2025-10-30T16:41:23.437Z",
-        "responsive": {
-          "srcset": [
-            {
-              "url": "/images/optimized/DSC_0286_S_beb696747c-640w.jpg",
-              "width": 640,
-              "size": 45946
-            },
-            {
-              "url": "/images/optimized/DSC_0286_S_beb696747c-original.jpg",
-              "width": 900,
-              "size": 77464
-            }
-          ],
-          "sizes": "100vw"
-        }
-      },
-      "content": [
-        {
-          "__component": "text.big-text",
-          "id": 8,
-          "text": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "An Abridged Draft for a Letter to Leila Khaled",
-                  "italic": true
-                },
-                {
-                  "type": "text",
-                  "text": " reconstructs the Palestinian landscape before the 1948 Nakba as recorded in the Palmach Aerial Photographs Collection. Using a flight simulator, the project stitches and geolocates hundreds of reconnaissance images, charting a continuous route over the reconstructed terrain while aligning it with contemporary satellite views. The tour moves between past and present, exposing seams, absences, and the infrastructural transformations that have reshaped the ground."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__component": "video.video-embed",
-          "id": 16,
-          "url": "https://vimeo.com/879235196/9aa86b97fc",
-          "caption": null
-        },
-        {
-          "__component": "text.two-columns",
-          "id": 7,
-          "text": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "Made from materials produced for military intelligence, the archive is redeployed here as a tool for public memory. Held across Israeli institutions and often difficult to access—especially for Palestinians—the collection offers a rare, high-resolution record of villages, fields, and roads on the brink of erasure. By restoring navigability to these images, the work shifts aerial vision from surveillance toward a practice of re-inscribing what has been displaced."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "---"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "Conceived in response to the cancellation of Leila Khaled’s participation in a virtual San Francisco State University event in September 2020, the video takes the form of a letter and an invitation: for Khaled to pilot the flight in the space from which she is routinely barred. It addresses intertwined restrictions on communication, vision, and movement, proposing virtual navigation as a modest counter to imposed limits on who may see, and who may travel."
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": 89,
       "documentId": "ra53bjx5vje5d46bxubljno1",
       "title": "Can a Self-Driving Car Navigate an Apartheid Road?",
@@ -810,120 +662,219 @@
       ]
     },
     {
-      "id": 93,
+      "id": 98,
       "documentId": "w4rcaung3k6qjskp8jjxakgi",
       "title": "If the Fire within Our Eyes",
       "slug": "If the Fire within Our Eyes",
       "customCSS": null,
       "createdAt": "2025-10-31T02:08:35.031Z",
-      "updatedAt": "2025-11-01T20:33:39.492Z",
-      "publishedAt": "2025-11-01T20:33:39.502Z",
+      "updatedAt": "2025-11-02T03:25:35.477Z",
+      "publishedAt": "2025-11-02T03:25:35.485Z",
       "years": "2023",
       "subtitle": null,
       "group": "Selected Works",
       "order": 1,
-      "image": null,
+      "image": {
+        "id": 6,
+        "documentId": "q0last6glybdjsugnn2y0tli",
+        "name": "_DSF1783.jpeg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 6240,
+        "height": 4160,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail__DSF1783.jpeg",
+            "hash": "thumbnail_DSF_1783_c6c6bab2b7",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 234,
+            "height": 156,
+            "size": 7.21,
+            "sizeInBytes": 7213,
+            "url": "/uploads/thumbnail_DSF_1783_c6c6bab2b7.jpeg"
+          },
+          "medium": {
+            "name": "medium__DSF1783.jpeg",
+            "hash": "medium_DSF_1783_c6c6bab2b7",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 750,
+            "height": 500,
+            "size": 48.65,
+            "sizeInBytes": 48651,
+            "url": "/uploads/medium_DSF_1783_c6c6bab2b7.jpeg"
+          },
+          "large": {
+            "name": "large__DSF1783.jpeg",
+            "hash": "large_DSF_1783_c6c6bab2b7",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 1000,
+            "height": 667,
+            "size": 77.49,
+            "sizeInBytes": 77486,
+            "url": "/uploads/large_DSF_1783_c6c6bab2b7.jpeg"
+          },
+          "small": {
+            "name": "small__DSF1783.jpeg",
+            "hash": "small_DSF_1783_c6c6bab2b7",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 500,
+            "height": 333,
+            "size": 24.29,
+            "sizeInBytes": 24294,
+            "url": "/uploads/small_DSF_1783_c6c6bab2b7.jpeg"
+          }
+        },
+        "hash": "DSF_1783_c6c6bab2b7",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "size": 2513.34,
+        "url": "/images/optimized/DSF_1783_c6c6bab2b7-original.jpeg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2025-11-02T03:08:45.713Z",
+        "updatedAt": "2025-11-02T03:08:45.713Z",
+        "publishedAt": "2025-11-02T03:08:45.714Z",
+        "responsive": {
+          "srcset": [
+            {
+              "url": "/images/optimized/DSF_1783_c6c6bab2b7-640w.jpeg",
+              "width": 640,
+              "size": 21590
+            },
+            {
+              "url": "/images/optimized/DSF_1783_c6c6bab2b7-1024w.jpeg",
+              "width": 1024,
+              "size": 46820
+            },
+            {
+              "url": "/images/optimized/DSF_1783_c6c6bab2b7-1920w.jpeg",
+              "width": 1920,
+              "size": 117954
+            },
+            {
+              "url": "/images/optimized/DSF_1783_c6c6bab2b7-2560w.jpeg",
+              "width": 2560,
+              "size": 182870
+            },
+            {
+              "url": "/images/optimized/DSF_1783_c6c6bab2b7-original.jpeg",
+              "width": 6240,
+              "size": 1090316
+            }
+          ],
+          "sizes": "100vw"
+        }
+      },
       "content": [
         {
           "__component": "image.image-block",
-          "id": 12,
+          "id": 23,
           "enableFullscreen": true,
-          "caption": null,
+          "caption": "Stereoscope 30° - roads, Mandatory parks, and other layers",
           "image": {
-            "id": 5,
-            "documentId": "yjwsfbp7w8rtw6ia2xv2i6xo",
-            "name": "_FINAL_01_07_19;29 copy.jpg",
+            "id": 6,
+            "documentId": "q0last6glybdjsugnn2y0tli",
+            "name": "_DSF1783.jpeg",
             "alternativeText": null,
             "caption": null,
-            "width": 2707,
-            "height": 2160,
+            "width": 6240,
+            "height": 4160,
             "formats": {
               "thumbnail": {
-                "name": "thumbnail__FINAL_01_07_19;29 copy.jpg",
-                "hash": "thumbnail_FINAL_01_07_19_29_copy_98683f000f",
-                "ext": ".jpg",
+                "name": "thumbnail__DSF1783.jpeg",
+                "hash": "thumbnail_DSF_1783_c6c6bab2b7",
+                "ext": ".jpeg",
                 "mime": "image/jpeg",
                 "path": null,
-                "width": 195,
+                "width": 234,
                 "height": 156,
-                "size": 4.46,
-                "sizeInBytes": 4459,
-                "url": "/uploads/thumbnail_FINAL_01_07_19_29_copy_98683f000f.jpg"
-              },
-              "large": {
-                "name": "large__FINAL_01_07_19;29 copy.jpg",
-                "hash": "large_FINAL_01_07_19_29_copy_98683f000f",
-                "ext": ".jpg",
-                "mime": "image/jpeg",
-                "path": null,
-                "width": 1000,
-                "height": 798,
-                "size": 57.76,
-                "sizeInBytes": 57760,
-                "url": "/uploads/large_FINAL_01_07_19_29_copy_98683f000f.jpg"
+                "size": 7.21,
+                "sizeInBytes": 7213,
+                "url": "/uploads/thumbnail_DSF_1783_c6c6bab2b7.jpeg"
               },
               "medium": {
-                "name": "medium__FINAL_01_07_19;29 copy.jpg",
-                "hash": "medium_FINAL_01_07_19_29_copy_98683f000f",
-                "ext": ".jpg",
+                "name": "medium__DSF1783.jpeg",
+                "hash": "medium_DSF_1783_c6c6bab2b7",
+                "ext": ".jpeg",
                 "mime": "image/jpeg",
                 "path": null,
                 "width": 750,
-                "height": 599,
-                "size": 33.28,
-                "sizeInBytes": 33277,
-                "url": "/uploads/medium_FINAL_01_07_19_29_copy_98683f000f.jpg"
+                "height": 500,
+                "size": 48.65,
+                "sizeInBytes": 48651,
+                "url": "/uploads/medium_DSF_1783_c6c6bab2b7.jpeg"
+              },
+              "large": {
+                "name": "large__DSF1783.jpeg",
+                "hash": "large_DSF_1783_c6c6bab2b7",
+                "ext": ".jpeg",
+                "mime": "image/jpeg",
+                "path": null,
+                "width": 1000,
+                "height": 667,
+                "size": 77.49,
+                "sizeInBytes": 77486,
+                "url": "/uploads/large_DSF_1783_c6c6bab2b7.jpeg"
               },
               "small": {
-                "name": "small__FINAL_01_07_19;29 copy.jpg",
-                "hash": "small_FINAL_01_07_19_29_copy_98683f000f",
-                "ext": ".jpg",
+                "name": "small__DSF1783.jpeg",
+                "hash": "small_DSF_1783_c6c6bab2b7",
+                "ext": ".jpeg",
                 "mime": "image/jpeg",
                 "path": null,
                 "width": 500,
-                "height": 399,
-                "size": 17.05,
-                "sizeInBytes": 17053,
-                "url": "/uploads/small_FINAL_01_07_19_29_copy_98683f000f.jpg"
+                "height": 333,
+                "size": 24.29,
+                "sizeInBytes": 24294,
+                "url": "/uploads/small_DSF_1783_c6c6bab2b7.jpeg"
               }
             },
-            "hash": "FINAL_01_07_19_29_copy_98683f000f",
-            "ext": ".jpg",
+            "hash": "DSF_1783_c6c6bab2b7",
+            "ext": ".jpeg",
             "mime": "image/jpeg",
-            "size": 498.81,
-            "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
+            "size": 2513.34,
+            "url": "/images/optimized/DSF_1783_c6c6bab2b7-original.jpeg",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
-            "createdAt": "2025-11-01T18:32:54.048Z",
-            "updatedAt": "2025-11-01T19:44:53.651Z",
-            "publishedAt": "2025-11-01T18:32:54.048Z",
+            "createdAt": "2025-11-02T03:08:45.713Z",
+            "updatedAt": "2025-11-02T03:08:45.713Z",
+            "publishedAt": "2025-11-02T03:08:45.714Z",
             "responsive": {
               "srcset": [
                 {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-640w.jpg",
+                  "url": "/images/optimized/DSF_1783_c6c6bab2b7-640w.jpeg",
                   "width": 640,
-                  "size": 11852
+                  "size": 21590
                 },
                 {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1024w.jpg",
+                  "url": "/images/optimized/DSF_1783_c6c6bab2b7-1024w.jpeg",
                   "width": 1024,
-                  "size": 23654
+                  "size": 46820
                 },
                 {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1920w.jpg",
+                  "url": "/images/optimized/DSF_1783_c6c6bab2b7-1920w.jpeg",
                   "width": 1920,
-                  "size": 98864
+                  "size": 117954
                 },
                 {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-2560w.jpg",
+                  "url": "/images/optimized/DSF_1783_c6c6bab2b7-2560w.jpeg",
                   "width": 2560,
-                  "size": 172204
+                  "size": 182870
                 },
                 {
-                  "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
-                  "width": 2707,
-                  "size": 217918
+                  "url": "/images/optimized/DSF_1783_c6c6bab2b7-original.jpeg",
+                  "width": 6240,
+                  "size": 1090316
                 }
               ],
               "sizes": "100vw"
@@ -932,485 +883,1253 @@
         },
         {
           "__component": "image.image-gallery",
-          "id": 3,
+          "id": 19,
           "layout": "justify",
-          "rows": 3,
+          "rows": 2,
           "gutter": 8,
           "enableFullscreen": true,
-          "caption": null,
+          "caption": "Stereoscope 60° - the Mount Scopus Viewshed",
           "images": [
             {
-              "id": 5,
-              "documentId": "yjwsfbp7w8rtw6ia2xv2i6xo",
-              "name": "_FINAL_01_07_19;29 copy.jpg",
+              "id": 9,
+              "documentId": "thnnkn2puvp35okq2q0t6ho2",
+              "name": "_DSF1709.jpeg",
               "alternativeText": null,
               "caption": null,
-              "width": 2707,
-              "height": 2160,
+              "width": 4059,
+              "height": 5073,
               "formats": {
                 "thumbnail": {
-                  "name": "thumbnail__FINAL_01_07_19;29 copy.jpg",
-                  "hash": "thumbnail_FINAL_01_07_19_29_copy_98683f000f",
-                  "ext": ".jpg",
+                  "name": "thumbnail__DSF1709.jpeg",
+                  "hash": "thumbnail_DSF_1709_36761bcb02",
+                  "ext": ".jpeg",
                   "mime": "image/jpeg",
                   "path": null,
-                  "width": 195,
+                  "width": 125,
                   "height": 156,
-                  "size": 4.46,
-                  "sizeInBytes": 4459,
-                  "url": "/uploads/thumbnail_FINAL_01_07_19_29_copy_98683f000f.jpg"
+                  "size": 2.91,
+                  "sizeInBytes": 2913,
+                  "url": "/uploads/thumbnail_DSF_1709_36761bcb02.jpeg"
+                },
+                "medium": {
+                  "name": "medium__DSF1709.jpeg",
+                  "hash": "medium_DSF_1709_36761bcb02",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 600,
+                  "height": 750,
+                  "size": 36.33,
+                  "sizeInBytes": 36327,
+                  "url": "/uploads/medium_DSF_1709_36761bcb02.jpeg"
                 },
                 "large": {
-                  "name": "large__FINAL_01_07_19;29 copy.jpg",
-                  "hash": "large_FINAL_01_07_19_29_copy_98683f000f",
-                  "ext": ".jpg",
+                  "name": "large__DSF1709.jpeg",
+                  "hash": "large_DSF_1709_36761bcb02",
+                  "ext": ".jpeg",
                   "mime": "image/jpeg",
                   "path": null,
-                  "width": 1000,
-                  "height": 798,
-                  "size": 57.76,
-                  "sizeInBytes": 57760,
-                  "url": "/uploads/large_FINAL_01_07_19_29_copy_98683f000f.jpg"
-                },
-                "medium": {
-                  "name": "medium__FINAL_01_07_19;29 copy.jpg",
-                  "hash": "medium_FINAL_01_07_19_29_copy_98683f000f",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 750,
-                  "height": 599,
-                  "size": 33.28,
-                  "sizeInBytes": 33277,
-                  "url": "/uploads/medium_FINAL_01_07_19_29_copy_98683f000f.jpg"
+                  "width": 800,
+                  "height": 1000,
+                  "size": 58.81,
+                  "sizeInBytes": 58806,
+                  "url": "/uploads/large_DSF_1709_36761bcb02.jpeg"
                 },
                 "small": {
-                  "name": "small__FINAL_01_07_19;29 copy.jpg",
-                  "hash": "small_FINAL_01_07_19_29_copy_98683f000f",
-                  "ext": ".jpg",
+                  "name": "small__DSF1709.jpeg",
+                  "hash": "small_DSF_1709_36761bcb02",
+                  "ext": ".jpeg",
                   "mime": "image/jpeg",
                   "path": null,
-                  "width": 500,
-                  "height": 399,
-                  "size": 17.05,
-                  "sizeInBytes": 17053,
-                  "url": "/uploads/small_FINAL_01_07_19_29_copy_98683f000f.jpg"
-                }
-              },
-              "hash": "FINAL_01_07_19_29_copy_98683f000f",
-              "ext": ".jpg",
-              "mime": "image/jpeg",
-              "size": 498.81,
-              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
-              "previewUrl": null,
-              "provider": "local",
-              "provider_metadata": null,
-              "createdAt": "2025-11-01T18:32:54.048Z",
-              "updatedAt": "2025-11-01T19:44:53.651Z",
-              "publishedAt": "2025-11-01T18:32:54.048Z",
-              "responsive": {
-                "srcset": [
-                  {
-                    "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-640w.jpg",
-                    "width": 640,
-                    "size": 11852
-                  },
-                  {
-                    "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1024w.jpg",
-                    "width": 1024,
-                    "size": 23654
-                  },
-                  {
-                    "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1920w.jpg",
-                    "width": 1920,
-                    "size": 98864
-                  },
-                  {
-                    "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-2560w.jpg",
-                    "width": 2560,
-                    "size": 172204
-                  },
-                  {
-                    "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
-                    "width": 2707,
-                    "size": 217918
-                  }
-                ],
-                "sizes": "100vw"
-              }
-            },
-            {
-              "id": 4,
-              "documentId": "xcqtqgl3tvka8wb9xscvwrz1",
-              "name": "duplicating-palestine-img.jpg",
-              "alternativeText": null,
-              "caption": null,
-              "width": 3000,
-              "height": 2000,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail_duplicating-palestine-img.jpg",
-                  "hash": "thumbnail_duplicating_palestine_img_a7a16451de",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 234,
-                  "height": 156,
-                  "size": 10.69,
-                  "sizeInBytes": 10689,
-                  "url": "/uploads/thumbnail_duplicating_palestine_img_a7a16451de.jpg"
-                },
-                "small": {
-                  "name": "small_duplicating-palestine-img.jpg",
-                  "hash": "small_duplicating_palestine_img_a7a16451de",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 500,
-                  "height": 333,
-                  "size": 48.39,
-                  "sizeInBytes": 48390,
-                  "url": "/uploads/small_duplicating_palestine_img_a7a16451de.jpg"
-                },
-                "medium": {
-                  "name": "medium_duplicating-palestine-img.jpg",
-                  "hash": "medium_duplicating_palestine_img_a7a16451de",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 750,
+                  "width": 400,
                   "height": 500,
-                  "size": 111.81,
-                  "sizeInBytes": 111813,
-                  "url": "/uploads/medium_duplicating_palestine_img_a7a16451de.jpg"
-                },
-                "large": {
-                  "name": "large_duplicating-palestine-img.jpg",
-                  "hash": "large_duplicating_palestine_img_a7a16451de",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 1000,
-                  "height": 667,
-                  "size": 193.3,
-                  "sizeInBytes": 193297,
-                  "url": "/uploads/large_duplicating_palestine_img_a7a16451de.jpg"
+                  "size": 18.1,
+                  "sizeInBytes": 18102,
+                  "url": "/uploads/small_DSF_1709_36761bcb02.jpeg"
                 }
               },
-              "hash": "duplicating_palestine_img_a7a16451de",
-              "ext": ".jpg",
-              "mime": "image/jpeg",
-              "size": 1396,
-              "url": "/images/optimized/duplicating_palestine_img_a7a16451de-original.jpg",
-              "previewUrl": null,
-              "provider": "local",
-              "provider_metadata": null,
-              "createdAt": "2025-10-31T12:23:17.229Z",
-              "updatedAt": "2025-10-31T12:23:17.229Z",
-              "publishedAt": "2025-10-31T12:23:17.229Z",
-              "responsive": {
-                "srcset": [
-                  {
-                    "url": "/images/optimized/duplicating_palestine_img_a7a16451de-640w.jpg",
-                    "width": 640,
-                    "size": 80228
-                  },
-                  {
-                    "url": "/images/optimized/duplicating_palestine_img_a7a16451de-1024w.jpg",
-                    "width": 1024,
-                    "size": 202094
-                  },
-                  {
-                    "url": "/images/optimized/duplicating_palestine_img_a7a16451de-1920w.jpg",
-                    "width": 1920,
-                    "size": 607580
-                  },
-                  {
-                    "url": "/images/optimized/duplicating_palestine_img_a7a16451de-2560w.jpg",
-                    "width": 2560,
-                    "size": 932640
-                  },
-                  {
-                    "url": "/images/optimized/duplicating_palestine_img_a7a16451de-original.jpg",
-                    "width": 3000,
-                    "size": 1136134
-                  }
-                ],
-                "sizes": "100vw"
-              }
-            },
-            {
-              "id": 3,
-              "documentId": "wwju08pxik3f6ylkocszf7r4",
-              "name": "_DSC0286_S.jpg",
-              "alternativeText": null,
-              "caption": null,
-              "width": 900,
-              "height": 600,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail__DSC0286_S.jpg",
-                  "hash": "thumbnail_DSC_0286_S_beb696747c",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 234,
-                  "height": 156,
-                  "size": 9.78,
-                  "sizeInBytes": 9781,
-                  "url": "/uploads/thumbnail_DSC_0286_S_beb696747c.jpg"
-                },
-                "small": {
-                  "name": "small__DSC0286_S.jpg",
-                  "hash": "small_DSC_0286_S_beb696747c",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 500,
-                  "height": 333,
-                  "size": 37.81,
-                  "sizeInBytes": 37814,
-                  "url": "/uploads/small_DSC_0286_S_beb696747c.jpg"
-                },
-                "medium": {
-                  "name": "medium__DSC0286_S.jpg",
-                  "hash": "medium_DSC_0286_S_beb696747c",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 750,
-                  "height": 500,
-                  "size": 76.24,
-                  "sizeInBytes": 76241,
-                  "url": "/uploads/medium_DSC_0286_S_beb696747c.jpg"
-                }
-              },
-              "hash": "DSC_0286_S_beb696747c",
-              "ext": ".jpg",
-              "mime": "image/jpeg",
-              "size": 99.37,
-              "url": "/images/optimized/DSC_0286_S_beb696747c-original.jpg",
-              "previewUrl": null,
-              "provider": "local",
-              "provider_metadata": null,
-              "createdAt": "2025-10-30T16:41:23.437Z",
-              "updatedAt": "2025-10-30T16:41:32.391Z",
-              "publishedAt": "2025-10-30T16:41:23.437Z",
-              "responsive": {
-                "srcset": [
-                  {
-                    "url": "/images/optimized/DSC_0286_S_beb696747c-640w.jpg",
-                    "width": 640,
-                    "size": 45946
-                  },
-                  {
-                    "url": "/images/optimized/DSC_0286_S_beb696747c-original.jpg",
-                    "width": 900,
-                    "size": 77464
-                  }
-                ],
-                "sizes": "100vw"
-              }
-            },
-            {
-              "id": 2,
-              "documentId": "knsel5k2iol7n8xln4bmwub2",
-              "name": "IMG_1338_S.jpg",
-              "alternativeText": null,
-              "caption": null,
-              "width": 3000,
-              "height": 2000,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail_IMG_1338_S.jpg",
-                  "hash": "thumbnail_IMG_1338_S_2538fffd6e",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 234,
-                  "height": 156,
-                  "size": 10.01,
-                  "sizeInBytes": 10014,
-                  "url": "/uploads/thumbnail_IMG_1338_S_2538fffd6e.jpg"
-                },
-                "small": {
-                  "name": "small_IMG_1338_S.jpg",
-                  "hash": "small_IMG_1338_S_2538fffd6e",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 500,
-                  "height": 333,
-                  "size": 48.5,
-                  "sizeInBytes": 48502,
-                  "url": "/uploads/small_IMG_1338_S_2538fffd6e.jpg"
-                },
-                "medium": {
-                  "name": "medium_IMG_1338_S.jpg",
-                  "hash": "medium_IMG_1338_S_2538fffd6e",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 750,
-                  "height": 500,
-                  "size": 116.48,
-                  "sizeInBytes": 116478,
-                  "url": "/uploads/medium_IMG_1338_S_2538fffd6e.jpg"
-                },
-                "large": {
-                  "name": "large_IMG_1338_S.jpg",
-                  "hash": "large_IMG_1338_S_2538fffd6e",
-                  "ext": ".jpg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 1000,
-                  "height": 667,
-                  "size": 207.87,
-                  "sizeInBytes": 207870,
-                  "url": "/uploads/large_IMG_1338_S_2538fffd6e.jpg"
-                }
-              },
-              "hash": "IMG_1338_S_2538fffd6e",
-              "ext": ".jpg",
-              "mime": "image/jpeg",
-              "size": 1518.91,
-              "url": "/images/optimized/IMG_1338_S_2538fffd6e-original.jpg",
-              "previewUrl": null,
-              "provider": "local",
-              "provider_metadata": null,
-              "createdAt": "2025-07-07T02:17:53.041Z",
-              "updatedAt": "2025-07-07T02:32:28.199Z",
-              "publishedAt": "2025-07-07T02:17:53.042Z",
-              "responsive": {
-                "srcset": [
-                  {
-                    "url": "/images/optimized/IMG_1338_S_2538fffd6e-640w.jpg",
-                    "width": 640,
-                    "size": 84730
-                  },
-                  {
-                    "url": "/images/optimized/IMG_1338_S_2538fffd6e-1024w.jpg",
-                    "width": 1024,
-                    "size": 228238
-                  },
-                  {
-                    "url": "/images/optimized/IMG_1338_S_2538fffd6e-1920w.jpg",
-                    "width": 1920,
-                    "size": 759166
-                  },
-                  {
-                    "url": "/images/optimized/IMG_1338_S_2538fffd6e-2560w.jpg",
-                    "width": 2560,
-                    "size": 1187376
-                  },
-                  {
-                    "url": "/images/optimized/IMG_1338_S_2538fffd6e-original.jpg",
-                    "width": 3000,
-                    "size": 1388640
-                  }
-                ],
-                "sizes": "100vw"
-              }
-            },
-            {
-              "id": 1,
-              "documentId": "id4mjy2ub8bv4u6kb2wlqjjc",
-              "name": "cha-001-printed.jpeg",
-              "alternativeText": null,
-              "caption": null,
-              "width": 3000,
-              "height": 2213,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail_cha-001-printed.jpeg",
-                  "hash": "thumbnail_cha_001_printed_f51895ed7b",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 212,
-                  "height": 156,
-                  "size": 8.88,
-                  "sizeInBytes": 8883,
-                  "url": "/uploads/thumbnail_cha_001_printed_f51895ed7b.jpeg"
-                },
-                "medium": {
-                  "name": "medium_cha-001-printed.jpeg",
-                  "hash": "medium_cha_001_printed_f51895ed7b",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 750,
-                  "height": 553,
-                  "size": 106.5,
-                  "sizeInBytes": 106496,
-                  "url": "/uploads/medium_cha_001_printed_f51895ed7b.jpeg"
-                },
-                "small": {
-                  "name": "small_cha-001-printed.jpeg",
-                  "hash": "small_cha_001_printed_f51895ed7b",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 500,
-                  "height": 369,
-                  "size": 46.68,
-                  "sizeInBytes": 46682,
-                  "url": "/uploads/small_cha_001_printed_f51895ed7b.jpeg"
-                },
-                "large": {
-                  "name": "large_cha-001-printed.jpeg",
-                  "hash": "large_cha_001_printed_f51895ed7b",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 1000,
-                  "height": 737,
-                  "size": 187.3,
-                  "sizeInBytes": 187295,
-                  "url": "/uploads/large_cha_001_printed_f51895ed7b.jpeg"
-                }
-              },
-              "hash": "cha_001_printed_f51895ed7b",
+              "hash": "DSF_1709_36761bcb02",
               "ext": ".jpeg",
               "mime": "image/jpeg",
-              "size": 1349.32,
-              "url": "/images/optimized/cha_001_printed_f51895ed7b-original.jpeg",
+              "size": 1848.26,
+              "url": "/images/optimized/DSF_1709_36761bcb02-original.jpeg",
               "previewUrl": null,
               "provider": "local",
               "provider_metadata": null,
-              "createdAt": "2025-07-07T02:06:07.656Z",
-              "updatedAt": "2025-07-07T02:06:07.656Z",
-              "publishedAt": "2025-07-07T02:06:07.656Z",
+              "createdAt": "2025-11-02T03:10:54.704Z",
+              "updatedAt": "2025-11-02T03:10:54.704Z",
+              "publishedAt": "2025-11-02T03:10:54.705Z",
               "responsive": {
                 "srcset": [
                   {
-                    "url": "/images/optimized/cha_001_printed_f51895ed7b-640w.jpeg",
+                    "url": "/images/optimized/DSF_1709_36761bcb02-640w.jpeg",
                     "width": 640,
-                    "size": 72776
+                    "size": 20872
                   },
                   {
-                    "url": "/images/optimized/cha_001_printed_f51895ed7b-1024w.jpeg",
+                    "url": "/images/optimized/DSF_1709_36761bcb02-1024w.jpeg",
                     "width": 1024,
-                    "size": 189146
+                    "size": 47666
                   },
                   {
-                    "url": "/images/optimized/cha_001_printed_f51895ed7b-1920w.jpeg",
+                    "url": "/images/optimized/DSF_1709_36761bcb02-1920w.jpeg",
                     "width": 1920,
-                    "size": 606338
+                    "size": 137354
                   },
                   {
-                    "url": "/images/optimized/cha_001_printed_f51895ed7b-2560w.jpeg",
+                    "url": "/images/optimized/DSF_1709_36761bcb02-2560w.jpeg",
                     "width": 2560,
-                    "size": 947152
+                    "size": 235650
                   },
                   {
-                    "url": "/images/optimized/cha_001_printed_f51895ed7b-original.jpeg",
-                    "width": 3000,
-                    "size": 1178120
+                    "url": "/images/optimized/DSF_1709_36761bcb02-original.jpeg",
+                    "width": 4059,
+                    "size": 741584
                   }
                 ],
                 "sizes": "100vw"
               }
+            },
+            {
+              "id": 8,
+              "documentId": "j3su0p2rz5mbt9os8rhq1s9p",
+              "name": "P1080150-Edit-Edit.jpg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 3000,
+              "height": 2092,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_P1080150-Edit-Edit.jpg",
+                  "hash": "thumbnail_P1080150_Edit_Edit_ff44bec336",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 224,
+                  "height": 156,
+                  "size": 5.9,
+                  "sizeInBytes": 5895,
+                  "url": "/uploads/thumbnail_P1080150_Edit_Edit_ff44bec336.jpg"
+                },
+                "medium": {
+                  "name": "medium_P1080150-Edit-Edit.jpg",
+                  "hash": "medium_P1080150_Edit_Edit_ff44bec336",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 523,
+                  "size": 56.61,
+                  "sizeInBytes": 56612,
+                  "url": "/uploads/medium_P1080150_Edit_Edit_ff44bec336.jpg"
+                },
+                "small": {
+                  "name": "small_P1080150-Edit-Edit.jpg",
+                  "hash": "small_P1080150_Edit_Edit_ff44bec336",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 349,
+                  "size": 26.26,
+                  "sizeInBytes": 26257,
+                  "url": "/uploads/small_P1080150_Edit_Edit_ff44bec336.jpg"
+                },
+                "large": {
+                  "name": "large_P1080150-Edit-Edit.jpg",
+                  "hash": "large_P1080150_Edit_Edit_ff44bec336",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 697,
+                  "size": 94.29,
+                  "sizeInBytes": 94286,
+                  "url": "/uploads/large_P1080150_Edit_Edit_ff44bec336.jpg"
+                }
+              },
+              "hash": "P1080150_Edit_Edit_ff44bec336",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "size": 599.68,
+              "url": "/images/optimized/P1080150_Edit_Edit_ff44bec336-original.jpg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2025-11-02T03:10:54.471Z",
+              "updatedAt": "2025-11-02T03:10:54.471Z",
+              "publishedAt": "2025-11-02T03:10:54.471Z",
+              "responsive": {
+                "srcset": [
+                  {
+                    "url": "/images/optimized/P1080150_Edit_Edit_ff44bec336-640w.jpg",
+                    "width": 640,
+                    "size": 28308
+                  },
+                  {
+                    "url": "/images/optimized/P1080150_Edit_Edit_ff44bec336-1024w.jpg",
+                    "width": 1024,
+                    "size": 63998
+                  },
+                  {
+                    "url": "/images/optimized/P1080150_Edit_Edit_ff44bec336-1920w.jpg",
+                    "width": 1920,
+                    "size": 179742
+                  },
+                  {
+                    "url": "/images/optimized/P1080150_Edit_Edit_ff44bec336-2560w.jpg",
+                    "width": 2560,
+                    "size": 274936
+                  },
+                  {
+                    "url": "/images/optimized/P1080150_Edit_Edit_ff44bec336-original.jpg",
+                    "width": 3000,
+                    "size": 355868
+                  }
+                ],
+                "sizes": "100vw"
+              }
+            },
+            {
+              "id": 10,
+              "documentId": "rvnckkp26mybhxkgt3w9b7nr",
+              "name": "_DSF1735.jpeg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 6131,
+              "height": 4087,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail__DSF1735.jpeg",
+                  "hash": "thumbnail_DSF_1735_7d6b00e75c",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 234,
+                  "height": 156,
+                  "size": 4.52,
+                  "sizeInBytes": 4516,
+                  "url": "/uploads/thumbnail_DSF_1735_7d6b00e75c.jpeg"
+                },
+                "medium": {
+                  "name": "medium__DSF1735.jpeg",
+                  "hash": "medium_DSF_1735_7d6b00e75c",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 500,
+                  "size": 29.16,
+                  "sizeInBytes": 29157,
+                  "url": "/uploads/medium_DSF_1735_7d6b00e75c.jpeg"
+                },
+                "large": {
+                  "name": "large__DSF1735.jpeg",
+                  "hash": "large_DSF_1735_7d6b00e75c",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 666,
+                  "size": 46.56,
+                  "sizeInBytes": 46558,
+                  "url": "/uploads/large_DSF_1735_7d6b00e75c.jpeg"
+                },
+                "small": {
+                  "name": "small__DSF1735.jpeg",
+                  "hash": "small_DSF_1735_7d6b00e75c",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 333,
+                  "size": 14.73,
+                  "sizeInBytes": 14726,
+                  "url": "/uploads/small_DSF_1735_7d6b00e75c.jpeg"
+                }
+              },
+              "hash": "DSF_1735_7d6b00e75c",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "size": 2640.77,
+              "url": "/images/optimized/DSF_1735_7d6b00e75c-original.jpeg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2025-11-02T03:10:54.783Z",
+              "updatedAt": "2025-11-02T03:10:54.783Z",
+              "publishedAt": "2025-11-02T03:10:54.784Z",
+              "responsive": {
+                "srcset": [
+                  {
+                    "url": "/images/optimized/DSF_1735_7d6b00e75c-640w.jpeg",
+                    "width": 640,
+                    "size": 9930
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1735_7d6b00e75c-1024w.jpeg",
+                    "width": 1024,
+                    "size": 21882
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1735_7d6b00e75c-1920w.jpeg",
+                    "width": 1920,
+                    "size": 57768
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1735_7d6b00e75c-2560w.jpeg",
+                    "width": 2560,
+                    "size": 107552
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1735_7d6b00e75c-original.jpeg",
+                    "width": 6131,
+                    "size": 1398928
+                  }
+                ],
+                "sizes": "100vw"
+              }
+            }
+          ]
+        },
+        {
+          "__component": "image.image-gallery",
+          "id": 20,
+          "layout": "justify",
+          "rows": 2,
+          "gutter": 8,
+          "enableFullscreen": true,
+          "caption": "Stereoscope 45° - special trees, land designations, and other layers",
+          "images": [
+            {
+              "id": 11,
+              "documentId": "ytltzz3qrzibwf8n72fs8o5q",
+              "name": "P1080164-Edit-Edit.jpg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 2500,
+              "height": 1875,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_P1080164-Edit-Edit.jpg",
+                  "hash": "thumbnail_P1080164_Edit_Edit_78c74c3731",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 208,
+                  "height": 156,
+                  "size": 5.33,
+                  "sizeInBytes": 5333,
+                  "url": "/uploads/thumbnail_P1080164_Edit_Edit_78c74c3731.jpg"
+                },
+                "medium": {
+                  "name": "medium_P1080164-Edit-Edit.jpg",
+                  "hash": "medium_P1080164_Edit_Edit_78c74c3731",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 562,
+                  "size": 62.7,
+                  "sizeInBytes": 62700,
+                  "url": "/uploads/medium_P1080164_Edit_Edit_78c74c3731.jpg"
+                },
+                "large": {
+                  "name": "large_P1080164-Edit-Edit.jpg",
+                  "hash": "large_P1080164_Edit_Edit_78c74c3731",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 750,
+                  "size": 108.31,
+                  "sizeInBytes": 108307,
+                  "url": "/uploads/large_P1080164_Edit_Edit_78c74c3731.jpg"
+                },
+                "small": {
+                  "name": "small_P1080164-Edit-Edit.jpg",
+                  "hash": "small_P1080164_Edit_Edit_78c74c3731",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 374,
+                  "size": 28.41,
+                  "sizeInBytes": 28412,
+                  "url": "/uploads/small_P1080164_Edit_Edit_78c74c3731.jpg"
+                }
+              },
+              "hash": "P1080164_Edit_Edit_78c74c3731",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "size": 497.48,
+              "url": "/images/optimized/P1080164_Edit_Edit_78c74c3731-original.jpg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2025-11-02T03:11:41.745Z",
+              "updatedAt": "2025-11-02T03:11:41.745Z",
+              "publishedAt": "2025-11-02T03:11:41.745Z",
+              "responsive": {
+                "srcset": [
+                  {
+                    "url": "/images/optimized/P1080164_Edit_Edit_78c74c3731-640w.jpg",
+                    "width": 640,
+                    "size": 30322
+                  },
+                  {
+                    "url": "/images/optimized/P1080164_Edit_Edit_78c74c3731-1024w.jpg",
+                    "width": 1024,
+                    "size": 70098
+                  },
+                  {
+                    "url": "/images/optimized/P1080164_Edit_Edit_78c74c3731-1920w.jpg",
+                    "width": 1920,
+                    "size": 191614
+                  },
+                  {
+                    "url": "/images/optimized/P1080164_Edit_Edit_78c74c3731-original.jpg",
+                    "width": 2500,
+                    "size": 285876
+                  }
+                ],
+                "sizes": "100vw"
+              }
+            },
+            {
+              "id": 12,
+              "documentId": "t2h7v3e96mrs9fmmh4fnf0mi",
+              "name": "_DSF1755.jpeg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 3974,
+              "height": 5961,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail__DSF1755.jpeg",
+                  "hash": "thumbnail_DSF_1755_a0dd801413",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 104,
+                  "height": 156,
+                  "size": 3.14,
+                  "sizeInBytes": 3141,
+                  "url": "/uploads/thumbnail_DSF_1755_a0dd801413.jpeg"
+                },
+                "medium": {
+                  "name": "medium__DSF1755.jpeg",
+                  "hash": "medium_DSF_1755_a0dd801413",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 750,
+                  "size": 43.76,
+                  "sizeInBytes": 43755,
+                  "url": "/uploads/medium_DSF_1755_a0dd801413.jpeg"
+                },
+                "small": {
+                  "name": "small__DSF1755.jpeg",
+                  "hash": "small_DSF_1755_a0dd801413",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 333,
+                  "height": 500,
+                  "size": 21.82,
+                  "sizeInBytes": 21815,
+                  "url": "/uploads/small_DSF_1755_a0dd801413.jpeg"
+                },
+                "large": {
+                  "name": "large__DSF1755.jpeg",
+                  "hash": "large_DSF_1755_a0dd801413",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 666,
+                  "height": 1000,
+                  "size": 68.69,
+                  "sizeInBytes": 68695,
+                  "url": "/uploads/large_DSF_1755_a0dd801413.jpeg"
+                }
+              },
+              "hash": "DSF_1755_a0dd801413",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "size": 2263.01,
+              "url": "/images/optimized/DSF_1755_a0dd801413-original.jpeg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2025-11-02T03:11:42.120Z",
+              "updatedAt": "2025-11-02T03:11:42.120Z",
+              "publishedAt": "2025-11-02T03:11:42.120Z",
+              "responsive": {
+                "srcset": [
+                  {
+                    "url": "/images/optimized/DSF_1755_a0dd801413-640w.jpeg",
+                    "width": 640,
+                    "size": 34350
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1755_a0dd801413-1024w.jpeg",
+                    "width": 1024,
+                    "size": 66920
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1755_a0dd801413-1920w.jpeg",
+                    "width": 1920,
+                    "size": 183552
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1755_a0dd801413-2560w.jpeg",
+                    "width": 2560,
+                    "size": 338864
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1755_a0dd801413-original.jpeg",
+                    "width": 3974,
+                    "size": 1033536
+                  }
+                ],
+                "sizes": "100vw"
+              }
+            },
+            {
+              "id": 13,
+              "documentId": "bvtu0l5tw07og3rwgfrlphhd",
+              "name": "_DSF1723.jpeg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 6149,
+              "height": 4099,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail__DSF1723.jpeg",
+                  "hash": "thumbnail_DSF_1723_2d764f7da6",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 234,
+                  "height": 156,
+                  "size": 6.52,
+                  "sizeInBytes": 6522,
+                  "url": "/uploads/thumbnail_DSF_1723_2d764f7da6.jpeg"
+                },
+                "medium": {
+                  "name": "medium__DSF1723.jpeg",
+                  "hash": "medium_DSF_1723_2d764f7da6",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 500,
+                  "size": 55.86,
+                  "sizeInBytes": 55860,
+                  "url": "/uploads/medium_DSF_1723_2d764f7da6.jpeg"
+                },
+                "small": {
+                  "name": "small__DSF1723.jpeg",
+                  "hash": "small_DSF_1723_2d764f7da6",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 333,
+                  "size": 25.99,
+                  "sizeInBytes": 25990,
+                  "url": "/uploads/small_DSF_1723_2d764f7da6.jpeg"
+                },
+                "large": {
+                  "name": "large__DSF1723.jpeg",
+                  "hash": "large_DSF_1723_2d764f7da6",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 666,
+                  "size": 91.38,
+                  "sizeInBytes": 91383,
+                  "url": "/uploads/large_DSF_1723_2d764f7da6.jpeg"
+                }
+              },
+              "hash": "DSF_1723_2d764f7da6",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "size": 2938.93,
+              "url": "/images/optimized/DSF_1723_2d764f7da6-original.jpeg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2025-11-02T03:11:42.150Z",
+              "updatedAt": "2025-11-02T03:11:42.150Z",
+              "publishedAt": "2025-11-02T03:11:42.150Z",
+              "responsive": {
+                "srcset": [
+                  {
+                    "url": "/images/optimized/DSF_1723_2d764f7da6-640w.jpeg",
+                    "width": 640,
+                    "size": 26816
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1723_2d764f7da6-1024w.jpeg",
+                    "width": 1024,
+                    "size": 59636
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1723_2d764f7da6-1920w.jpeg",
+                    "width": 1920,
+                    "size": 162032
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1723_2d764f7da6-2560w.jpeg",
+                    "width": 2560,
+                    "size": 263888
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1723_2d764f7da6-original.jpeg",
+                    "width": 6149,
+                    "size": 1601414
+                  }
+                ],
+                "sizes": "100vw"
+              }
+            }
+          ]
+        },
+        {
+          "__component": "image.image-gallery",
+          "id": 21,
+          "layout": "justify",
+          "rows": 1,
+          "gutter": 8,
+          "enableFullscreen": true,
+          "caption": "Stereoscope 15° - barriers, curb stones, and regional plan 11092a - Mount Scopus Slopes National Park",
+          "images": [
+            {
+              "id": 14,
+              "documentId": "uxv4a4atkzpk7a0c50534hy3",
+              "name": "_DSF1730.jpeg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 4000,
+              "height": 6001,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail__DSF1730.jpeg",
+                  "hash": "thumbnail_DSF_1730_3800722cab",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 104,
+                  "height": 156,
+                  "size": 1.69,
+                  "sizeInBytes": 1689,
+                  "url": "/uploads/thumbnail_DSF_1730_3800722cab.jpeg"
+                },
+                "large": {
+                  "name": "large__DSF1730.jpeg",
+                  "hash": "large_DSF_1730_3800722cab",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 667,
+                  "height": 1000,
+                  "size": 26.95,
+                  "sizeInBytes": 26954,
+                  "url": "/uploads/large_DSF_1730_3800722cab.jpeg"
+                },
+                "medium": {
+                  "name": "medium__DSF1730.jpeg",
+                  "hash": "medium_DSF_1730_3800722cab",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 750,
+                  "size": 16.8,
+                  "sizeInBytes": 16802,
+                  "url": "/uploads/medium_DSF_1730_3800722cab.jpeg"
+                },
+                "small": {
+                  "name": "small__DSF1730.jpeg",
+                  "hash": "small_DSF_1730_3800722cab",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 333,
+                  "height": 500,
+                  "size": 8.77,
+                  "sizeInBytes": 8767,
+                  "url": "/uploads/small_DSF_1730_3800722cab.jpeg"
+                }
+              },
+              "hash": "DSF_1730_3800722cab",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "size": 1594.44,
+              "url": "/images/optimized/DSF_1730_3800722cab-original.jpeg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2025-11-02T03:12:16.908Z",
+              "updatedAt": "2025-11-02T03:12:16.908Z",
+              "publishedAt": "2025-11-02T03:12:16.908Z",
+              "responsive": {
+                "srcset": [
+                  {
+                    "url": "/images/optimized/DSF_1730_3800722cab-640w.jpeg",
+                    "width": 640,
+                    "size": 10156
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1730_3800722cab-1024w.jpeg",
+                    "width": 1024,
+                    "size": 23206
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1730_3800722cab-1920w.jpeg",
+                    "width": 1920,
+                    "size": 75452
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1730_3800722cab-2560w.jpeg",
+                    "width": 2560,
+                    "size": 155946
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1730_3800722cab-original.jpeg",
+                    "width": 4000,
+                    "size": 538910
+                  }
+                ],
+                "sizes": "100vw"
+              }
+            },
+            {
+              "id": 15,
+              "documentId": "sywkl1tbblayo7e6wssgcmg4",
+              "name": "_DSF1731.jpeg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 3989,
+              "height": 5983,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail__DSF1731.jpeg",
+                  "hash": "thumbnail_DSF_1731_420c8cdd6f",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 104,
+                  "height": 156,
+                  "size": 1.91,
+                  "sizeInBytes": 1910,
+                  "url": "/uploads/thumbnail_DSF_1731_420c8cdd6f.jpeg"
+                },
+                "large": {
+                  "name": "large__DSF1731.jpeg",
+                  "hash": "large_DSF_1731_420c8cdd6f",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 667,
+                  "height": 1000,
+                  "size": 32.47,
+                  "sizeInBytes": 32465,
+                  "url": "/uploads/large_DSF_1731_420c8cdd6f.jpeg"
+                },
+                "medium": {
+                  "name": "medium__DSF1731.jpeg",
+                  "hash": "medium_DSF_1731_420c8cdd6f",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 750,
+                  "size": 20.02,
+                  "sizeInBytes": 20017,
+                  "url": "/uploads/medium_DSF_1731_420c8cdd6f.jpeg"
+                },
+                "small": {
+                  "name": "small__DSF1731.jpeg",
+                  "hash": "small_DSF_1731_420c8cdd6f",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 333,
+                  "height": 500,
+                  "size": 10.25,
+                  "sizeInBytes": 10248,
+                  "url": "/uploads/small_DSF_1731_420c8cdd6f.jpeg"
+                }
+              },
+              "hash": "DSF_1731_420c8cdd6f",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "size": 1843.96,
+              "url": "/images/optimized/DSF_1731_420c8cdd6f-original.jpeg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2025-11-02T03:12:16.937Z",
+              "updatedAt": "2025-11-02T03:12:16.937Z",
+              "publishedAt": "2025-11-02T03:12:16.937Z",
+              "responsive": {
+                "srcset": [
+                  {
+                    "url": "/images/optimized/DSF_1731_420c8cdd6f-640w.jpeg",
+                    "width": 640,
+                    "size": 11736
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1731_420c8cdd6f-1024w.jpeg",
+                    "width": 1024,
+                    "size": 27734
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1731_420c8cdd6f-1920w.jpeg",
+                    "width": 1920,
+                    "size": 96320
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1731_420c8cdd6f-2560w.jpeg",
+                    "width": 2560,
+                    "size": 202900
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1731_420c8cdd6f-original.jpeg",
+                    "width": 3989,
+                    "size": 733860
+                  }
+                ],
+                "sizes": "100vw"
+              }
+            },
+            {
+              "id": 16,
+              "documentId": "rtf6xduul7ob2wxq2pbtnn1c",
+              "name": "_DSF1759.jpeg",
+              "alternativeText": null,
+              "caption": null,
+              "width": 6088,
+              "height": 4059,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail__DSF1759.jpeg",
+                  "hash": "thumbnail_DSF_1759_016f5f5783",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 234,
+                  "height": 156,
+                  "size": 5.29,
+                  "sizeInBytes": 5286,
+                  "url": "/uploads/thumbnail_DSF_1759_016f5f5783.jpeg"
+                },
+                "medium": {
+                  "name": "medium__DSF1759.jpeg",
+                  "hash": "medium_DSF_1759_016f5f5783",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 750,
+                  "height": 500,
+                  "size": 43.9,
+                  "sizeInBytes": 43896,
+                  "url": "/uploads/medium_DSF_1759_016f5f5783.jpeg"
+                },
+                "small": {
+                  "name": "small__DSF1759.jpeg",
+                  "hash": "small_DSF_1759_016f5f5783",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 500,
+                  "height": 333,
+                  "size": 19.83,
+                  "sizeInBytes": 19828,
+                  "url": "/uploads/small_DSF_1759_016f5f5783.jpeg"
+                },
+                "large": {
+                  "name": "large__DSF1759.jpeg",
+                  "hash": "large_DSF_1759_016f5f5783",
+                  "ext": ".jpeg",
+                  "mime": "image/jpeg",
+                  "path": null,
+                  "width": 1000,
+                  "height": 666,
+                  "size": 75.16,
+                  "sizeInBytes": 75160,
+                  "url": "/uploads/large_DSF_1759_016f5f5783.jpeg"
+                }
+              },
+              "hash": "DSF_1759_016f5f5783",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "size": 2886.76,
+              "url": "/images/optimized/DSF_1759_016f5f5783-original.jpeg",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2025-11-02T03:12:16.971Z",
+              "updatedAt": "2025-11-02T03:12:16.971Z",
+              "publishedAt": "2025-11-02T03:12:16.972Z",
+              "responsive": {
+                "srcset": [
+                  {
+                    "url": "/images/optimized/DSF_1759_016f5f5783-640w.jpeg",
+                    "width": 640,
+                    "size": 15928
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1759_016f5f5783-1024w.jpeg",
+                    "width": 1024,
+                    "size": 38508
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1759_016f5f5783-1920w.jpeg",
+                    "width": 1920,
+                    "size": 120008
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1759_016f5f5783-2560w.jpeg",
+                    "width": 2560,
+                    "size": 225784
+                  },
+                  {
+                    "url": "/images/optimized/DSF_1759_016f5f5783-original.jpeg",
+                    "width": 6088,
+                    "size": 1578278
+                  }
+                ],
+                "sizes": "100vw"
+              }
+            }
+          ]
+        },
+        {
+          "__component": "image.image-block",
+          "id": 24,
+          "enableFullscreen": true,
+          "caption": null,
+          "image": {
+            "id": 17,
+            "documentId": "qj92di44ssvlg6ow2otznu24",
+            "name": "Shabtai_b-24-Enhanced-NR.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 3000,
+            "height": 1688,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_Shabtai_b-24-Enhanced-NR.jpg",
+                "hash": "thumbnail_Shabtai_b_24_Enhanced_NR_295e270360",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "path": null,
+                "width": 245,
+                "height": 138,
+                "size": 3.61,
+                "sizeInBytes": 3609,
+                "url": "/uploads/thumbnail_Shabtai_b_24_Enhanced_NR_295e270360.jpg"
+              },
+              "large": {
+                "name": "large_Shabtai_b-24-Enhanced-NR.jpg",
+                "hash": "large_Shabtai_b_24_Enhanced_NR_295e270360",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "path": null,
+                "width": 1000,
+                "height": 563,
+                "size": 34.18,
+                "sizeInBytes": 34179,
+                "url": "/uploads/large_Shabtai_b_24_Enhanced_NR_295e270360.jpg"
+              },
+              "medium": {
+                "name": "medium_Shabtai_b-24-Enhanced-NR.jpg",
+                "hash": "medium_Shabtai_b_24_Enhanced_NR_295e270360",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "path": null,
+                "width": 750,
+                "height": 422,
+                "size": 20.77,
+                "sizeInBytes": 20767,
+                "url": "/uploads/medium_Shabtai_b_24_Enhanced_NR_295e270360.jpg"
+              },
+              "small": {
+                "name": "small_Shabtai_b-24-Enhanced-NR.jpg",
+                "hash": "small_Shabtai_b_24_Enhanced_NR_295e270360",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "path": null,
+                "width": 500,
+                "height": 281,
+                "size": 10.4,
+                "sizeInBytes": 10397,
+                "url": "/uploads/small_Shabtai_b_24_Enhanced_NR_295e270360.jpg"
+              }
+            },
+            "hash": "Shabtai_b_24_Enhanced_NR_295e270360",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 229.84,
+            "url": "/images/optimized/Shabtai_b_24_Enhanced_NR_295e270360-original.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2025-11-02T03:12:50.965Z",
+            "updatedAt": "2025-11-02T03:12:50.965Z",
+            "publishedAt": "2025-11-02T03:12:50.966Z",
+            "responsive": {
+              "srcset": [
+                {
+                  "url": "/images/optimized/Shabtai_b_24_Enhanced_NR_295e270360-640w.jpg",
+                  "width": 640,
+                  "size": 7982
+                },
+                {
+                  "url": "/images/optimized/Shabtai_b_24_Enhanced_NR_295e270360-1024w.jpg",
+                  "width": 1024,
+                  "size": 18286
+                },
+                {
+                  "url": "/images/optimized/Shabtai_b_24_Enhanced_NR_295e270360-1920w.jpg",
+                  "width": 1920,
+                  "size": 55284
+                },
+                {
+                  "url": "/images/optimized/Shabtai_b_24_Enhanced_NR_295e270360-2560w.jpg",
+                  "width": 2560,
+                  "size": 84822
+                },
+                {
+                  "url": "/images/optimized/Shabtai_b_24_Enhanced_NR_295e270360-original.jpg",
+                  "width": 3000,
+                  "size": 110408
+                }
+              ],
+              "sizes": "100vw"
+            }
+          }
+        },
+        {
+          "__component": "text.two-columns",
+          "id": 16,
+          "text": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "In a new solo exhibition at the Bezalel Gallery of Contemporary Art, Shabtai Pinchevsky presents a video work titled On the Optics of Mount Scopus (2021) and a sculptural installation made up of stereoscopes which were commissioned especially for the exhibition. The exhibition opens just as the Bezalel Academy of Arts and Design is preparing to move from its Mount Scopus campus to a new building in central Jerusalem."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "At the heart of the exhibition is a two-channel video work in the form of an imaginary commencement speech given at the Hebrew University theater on top of Mount Scopus. The campus is shared by the Hebrew University and the Bezalel Academy, which moved there in 1990. Since the university was inaugurated in 1925, the theater and its scenery have served as a backdrop for events with national-Zionist significance – held first by the Zionist establishment and later by the State of Israel. This \"primeval\" landscape, stretching east to the Judean Desert, the Dead Sea and the Jordanian Highlands, figures largely in local and Western painting and photography in the 19th and 20th centuries. The video work is based on visual research into the history of photography on Mount Scopus, and uses a 3D model of the theater created by Pinchevsky to discuss the role of landscape imagery throughout the Zionist project."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "The title of the exhibition, \"If the Fire within Our Eyes\", is taken from the performative text written by Pinchevsky, that accompanies the video work. The phrase references ancient theories of human vision, which understood vision as a tactile sense, and the eye an organ that “probes” the world. These theories are mentioned in relation to a discussion of the role of landscape imagery in a political and cultural space in which “the view” is an asset used to promote settlement and control."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "---"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Pinchevsky writes: \"The repeated subjection of the landscape as an artistic subject has been just one of the excuses made by the Israel Nature and Parks Authority (INPA) in creating the Mount Scopus Slopes National Park. The National Park is part of a chain of parks surrounding Jerusalem that have been purposely designed to limit the expansion of Palestinian neighborhoods and deny Palestinian livelihood in the city. To justify establishing it, the INPA presents a rich history of imagery based on this landscape, framing it as a national Jewish asset that the State of Israel must protect and keep free of construction.”"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "The video work is accompanied by a sculptural installation made up of stereoscopes that Pinchevsky built. These optical devices for viewing 3D images were a popular means of entertainment and \"virtual\" tourism in the early 20th century. The same optical principles govern contemporary media devices such as VR glasses. The stereoscopes shown in the exhibition are variations on Charles Wheatstone's original design from 1832. The device was first introduced to the public in Great Britain a year before the invention of photography was announced in France. The stereoscopes in the exhibition will display architectural and geographical drawings by Pinchevsky, which offer a geometrical and geophysical analysis of the relationship between seeing and controlling that exists between Mount Scopus and its environs."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Curator Prof. Dor Guez",
+                  "italic": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "documentId": "yj08v2d80dlu6v74wb2b0qc3",
+      "title": "An Abridged Draft for a Letter to Leila Khaled",
+      "slug": "abridged",
+      "customCSS": null,
+      "createdAt": "2025-07-07T00:56:13.442Z",
+      "updatedAt": "2025-11-02T03:30:27.370Z",
+      "publishedAt": "2025-11-02T03:30:27.379Z",
+      "years": "2022",
+      "subtitle": null,
+      "group": "Selected Works",
+      "order": 3,
+      "image": {
+        "id": 3,
+        "documentId": "wwju08pxik3f6ylkocszf7r4",
+        "name": "_DSC0286_S.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 900,
+        "height": 600,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail__DSC0286_S.jpg",
+            "hash": "thumbnail_DSC_0286_S_beb696747c",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 234,
+            "height": 156,
+            "size": 9.78,
+            "sizeInBytes": 9781,
+            "url": "/uploads/thumbnail_DSC_0286_S_beb696747c.jpg"
+          },
+          "small": {
+            "name": "small__DSC0286_S.jpg",
+            "hash": "small_DSC_0286_S_beb696747c",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 500,
+            "height": 333,
+            "size": 37.81,
+            "sizeInBytes": 37814,
+            "url": "/uploads/small_DSC_0286_S_beb696747c.jpg"
+          },
+          "medium": {
+            "name": "medium__DSC0286_S.jpg",
+            "hash": "medium_DSC_0286_S_beb696747c",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 750,
+            "height": 500,
+            "size": 76.24,
+            "sizeInBytes": 76241,
+            "url": "/uploads/medium_DSC_0286_S_beb696747c.jpg"
+          }
+        },
+        "hash": "DSC_0286_S_beb696747c",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 99.37,
+        "url": "/images/optimized/DSC_0286_S_beb696747c-original.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2025-10-30T16:41:23.437Z",
+        "updatedAt": "2025-10-30T16:41:32.391Z",
+        "publishedAt": "2025-10-30T16:41:23.437Z",
+        "responsive": {
+          "srcset": [
+            {
+              "url": "/images/optimized/DSC_0286_S_beb696747c-640w.jpg",
+              "width": 640,
+              "size": 45946
+            },
+            {
+              "url": "/images/optimized/DSC_0286_S_beb696747c-original.jpg",
+              "width": 900,
+              "size": 77464
+            }
+          ],
+          "sizes": "100vw"
+        }
+      },
+      "content": [
+        {
+          "__component": "text.big-text",
+          "id": 13,
+          "text": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "An Abridged Draft for a Letter to Leila Khaled",
+                  "italic": true
+                },
+                {
+                  "type": "text",
+                  "text": " reconstructs the Palestinian landscape before the 1948 Nakba as recorded in the Palmach Aerial Photographs Collection. Using a flight simulator, the project stitches and geolocates hundreds of reconnaissance images, charting a continuous route over the reconstructed terrain while aligning it with contemporary satellite views. The tour moves between past and present, exposing seams, absences, and the infrastructural transformations that have reshaped the ground."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "video.video-embed",
+          "id": 19,
+          "url": "https://vimeo.com/879235196/9aa86b97fc",
+          "caption": "two minutes excerpt / full video available here"
+        },
+        {
+          "__component": "text.two-columns",
+          "id": 17,
+          "text": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Made from materials produced for military intelligence, the archive is redeployed here as a tool for public memory. Held across Israeli institutions and often difficult to access—especially for Palestinians—the collection offers a rare, high-resolution record of villages, fields, and roads on the brink of erasure. By restoring navigability to these images, the work shifts aerial vision from surveillance toward a practice of re-inscribing what has been displaced."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "---"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Conceived in response to the cancellation of Leila Khaled’s participation in a virtual San Francisco State University event in September 2020, the video takes the form of a letter and an invitation: for Khaled to pilot the flight in the space from which she is routinely barred. It addresses intertwined restrictions on communication, vision, and movement, proposing virtual navigation as a modest counter to imposed limits on who may see, and who may travel."
+                }
+              ]
             }
           ]
         }
