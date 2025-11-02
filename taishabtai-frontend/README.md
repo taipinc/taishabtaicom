@@ -19,6 +19,34 @@ A static portfolio website built with React and Vite, featuring a custom SPA rou
 - **Axios** (data fetching)
 - **ESLint** (code linting)
 
+## Quick Start: Updating Website Content
+
+**After making changes in Strapi CMS:**
+
+```bash
+# 1. Fetch latest content from Strapi
+npm run fetch-data
+
+# 2. Optimize images and update URLs
+npm run optimize-images
+
+# 3. Commit and deploy (triggers Vercel auto-deploy)
+git add public/data/ public/images/
+git commit -m "Update content"
+git push origin static-site-conversion
+```
+
+**That's it!** Vercel will automatically build and deploy. Changes live in ~2 minutes.
+
+<details>
+<summary>💡 Why these steps?</summary>
+
+- **fetch-data**: Downloads content from Strapi to `/public/data/` JSON files
+- **optimize-images**: Creates responsive image variants (640w, 1024w, 1920w, 2560w) and updates JSON with new URLs
+- **git commit**: Required! Vercel deploys from git, so optimized images must be committed
+- **git push**: Triggers automatic deployment via GitHub integration
+</details>
+
 ## Getting Started
 
 ### Prerequisites
@@ -96,11 +124,28 @@ This runs:
 
 ## Deployment
 
-This project is configured for deployment on **Vercel**.
+This project is deployed on **Vercel** via **GitHub integration** (automatic deployment on push).
 
-### Deploy to Vercel
+### Automatic Deployment (Recommended)
 
-#### Option 1: Vercel CLI (Manual Deploy)
+Push to the `static-site-conversion` branch to trigger automatic deployment:
+
+```bash
+# After running fetch-data and optimize-images
+git add public/data/ public/images/
+git commit -m "Update content from Strapi"
+git push origin static-site-conversion
+```
+
+Vercel will automatically:
+1. Detect the push
+2. Run `npm install` and `npm run build`
+3. Deploy to production
+4. Live in ~2 minutes
+
+### Manual Deployment (Optional)
+
+If needed, you can deploy directly with Vercel CLI:
 
 ```bash
 # Install Vercel CLI globally (if not already installed)
@@ -110,22 +155,14 @@ npm install -g vercel
 vercel --prod --yes
 ```
 
-#### Option 2: Git Integration (Automatic Deploy)
-
-Push to your main branch and Vercel will automatically deploy:
-
-```bash
-git add .
-git commit -m "Your commit message"
-git push origin main
-```
-
 ### Vercel Configuration
 
 The root `vercel.json` file configures:
 - Build command: `cd taishabtai-frontend && npm run build`
 - Output directory: `taishabtai-frontend/dist`
 - SPA routing: All routes rewrite to `/index.html`
+
+**Important**: Optimized images and JSON data files **must be committed to git** because Vercel only runs `npm run build`, not `fetch-data` or `optimize-images`.
 
 ## Code Quality
 
@@ -174,7 +211,14 @@ taishabtai-frontend/
 
 ## Notes
 
-- The site uses custom routing without React Router
-- All routes are rewritten to `/index.html` for SPA functionality
-- Images are optimized in multiple formats and sizes for responsive delivery
-- Content is fetched from Strapi and saved as static JSON files
+### Architecture
+- **Static Site**: Content is pre-fetched from Strapi and committed to git as static JSON
+- **Custom Routing**: Uses HTML5 History API (no React Router)
+- **SPA**: All routes rewrite to `/index.html` via Vercel configuration
+- **Responsive Images**: Optimized in 4 sizes (640w, 1024w, 1920w, 2560w) with srcset
+
+### Important Workflow Notes
+- Always run `npm run optimize-images` after `npm run fetch-data`
+- Commit generated files in `public/data/` and `public/images/` to git
+- Push to `static-site-conversion` branch to deploy
+- Vercel auto-deploys on push (GitHub integration)

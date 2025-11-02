@@ -14,11 +14,16 @@ The architecture follows a **static site** approach where content is fetched fro
 
 ```
 taishabtaicom/
+├── .git/                   # Git repository (root level)
 ├── taishabtai-frontend/    # React application
 └── taishabtai-backend/     # Strapi CMS
 ```
 
-**Important**: Always `cd` into the appropriate directory before running commands. The root `package.json` does not exist.
+**Important Git Structure**:
+- The git repository is at the **root** level (one `.git/` folder for the entire monorepo)
+- Git commands work from **anywhere** in the repo (parent or child folders)
+- npm commands must be run in folders with `package.json` (frontend or backend)
+- You can run all git commands from `taishabtai-frontend/` - git will find the `.git/` folder in the parent
 
 ## Development Commands
 
@@ -55,12 +60,20 @@ npm run build              # Build admin panel
 
 ### Deployment
 
-The project deploys to Vercel. The root `vercel.json` configures the build:
+The project deploys to Vercel via GitHub integration. Push to the `static-site-conversion` branch to trigger automatic deployment.
 
 ```bash
-vercel --prod --yes        # Deploy from CLI
-# OR push to main branch for automatic deployment
+# After updating content
+git add taishabtai-frontend/public/data/
+git add taishabtai-frontend/public/images/
+git commit -m "Update content"
+git push origin static-site-conversion    # Triggers Vercel deployment automatically
 ```
+
+**Important**: Optimized images and data files MUST be committed to git because:
+- Vercel only runs `npm run build` (not `fetch-data` or `optimize-images`)
+- The generated assets are the source of truth for the static site
+- They are NOT in `.gitignore` and should be committed after each content update
 
 ## Architecture & Key Concepts
 
@@ -106,10 +119,18 @@ Pages use a component-based content system defined in Strapi:
 #### Image Handling
 Multi-stage image pipeline:
 
-1. **Fetch**: `fetch-strapi-data.js` downloads original images from Strapi
-2. **Optimize**: `process-images.js` creates WebP/JPEG in multiple sizes (400px, 800px, 1200px, 1600px)
-3. **Display**: `ResponsiveImage.jsx` uses `<picture>` with srcset for responsive loading
+1. **Fetch**: `fetch-strapi-data.js` downloads original images from Strapi to `/public/images/`
+2. **Optimize**: `process-images.js` creates optimized versions in `/public/images/optimized/`:
+   - Multiple sizes: 640w, 1024w, 1920w, 2560w, original
+   - Optimized quality (JPEG: 85%, PNG: 90%)
+   - Updates `pages.json` and `site.json` with new URLs and responsive srcset data
+3. **Display**: `ResponsiveImage.jsx` uses `<img srcset>` for responsive loading
 4. **Lightbox**: `ImageLightbox.jsx` provides fullscreen viewing with keyboard navigation
+
+**URL Resolution** (`media.js`):
+- Strapi URLs (`/uploads/...`) → extracts filename → `/images/filename.jpg`
+- Optimized URLs (`/images/optimized/...`) → returns as-is (already processed)
+- This allows the same component to work with both raw Strapi data and optimized data
 
 **Key Files**:
 - `taishabtai-frontend/scripts/process-images.js` - Image optimization with Sharp
@@ -129,32 +150,64 @@ Two main content types:
 2. **Site** (`/api/site`) - Global site settings with fallback image
 
 #### API Population
-Strapi v5 uses nested population for dynamic zones. The fetch script uses:
+Strapi v5 uses array-based populate for dynamic zones. The fetch script uses:
 
 ```javascript
-populate[content][on][image.image-block][populate]=image
-populate[content][on][image.image-gallery][populate]=images
-populate[image]=*
+// Correct Strapi v5 syntax for populating nested relations in dynamic zones
+populate[0]=image&populate[1]=content.image&populate[2]=content.images
 ```
 
+This populates:
+- `page.image` - Main page image
+- `content[].image` - Images in image-block components
+- `content[].images` - Images in image-gallery components
+
+**Common Pitfall**: Using `populate[content][populate]=*` or `populate[image]=*` causes validation errors in Strapi v5. Use array-based syntax instead.
+
 **Key Files**:
-- `taishabtai-frontend/scripts/fetch-strapi-data.js:144-164` - Nested population logic
+- `taishabtai-frontend/scripts/fetch-strapi-data.js:148` - Populate query string
 - `taishabtai-backend/src/api/page/` - Page content type
 - `taishabtai-backend/src/api/site/` - Site settings
 
 ## Common Workflows
 
-### Adding New Content
-1. Start Strapi backend: `cd taishabtai-backend && npm run develop`
-2. Edit content in admin panel (http://localhost:1337/admin)
-3. Fetch updated data: `cd ../taishabtai-frontend && npm run fetch-data`
-4. View changes: `npm run dev`
+### Content Update & Deployment (Complete Workflow)
 
-### Deploying Changes
+**After editing content in Strapi:**
+
 ```bash
 cd taishabtai-frontend
-npm run build:full     # Fetch latest data + optimize images + build
-vercel --prod --yes    # Deploy to production
+
+# Step 1: Fetch latest content from Strapi
+npm run fetch-data          # Downloads to /public/data/ and /public/images/
+
+# Step 2: Optimize images and update JSON with new URLs
+npm run optimize-images     # Creates responsive images in /public/images/optimized/
+
+# Step 3: Test locally (optional)
+npm run build && npm run preview
+
+# Step 4: Commit generated assets (REQUIRED for deployment)
+git add public/data/ public/images/
+git commit -m "Update content from Strapi"
+git push origin static-site-conversion    # Auto-deploys to Vercel
+
+# OR use the all-in-one command for steps 1-2:
+npm run build:full         # Runs fetch-data + optimize-images + build
+```
+
+**Why commit generated assets?**
+- Vercel only runs `npm run build` (not `fetch-data` or `optimize-images`)
+- The static JSON and optimized images ARE the deployed content
+- This is a "static site generator" pattern - build artifacts are version controlled
+
+### Development Only (No Deployment)
+```bash
+cd taishabtai-backend && npm run develop    # Start Strapi CMS
+# Edit content at http://localhost:1337/admin
+cd ../taishabtai-frontend
+npm run fetch-data                           # Pull latest content
+npm run dev                                  # View at http://localhost:5173
 ```
 
 ### Modifying Routing
