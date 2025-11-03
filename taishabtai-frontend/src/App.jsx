@@ -2,6 +2,7 @@ import React, {useState, useEffect, useCallback} from 'react';
 import Sidebar from './components/Sidebar';
 import PageContent from './components/PageContent';
 import ImageDisplay from './components/ImageDisplay';
+import {fetchPagesFromStrapi, fetchSiteFromStrapi} from './services/strapiApi';
 
 const normalizePage = (page) => {
 	if (!page) return null;
@@ -41,15 +42,36 @@ function App() {
 	useEffect(() => {
 		const fetchContent = async () => {
 			try {
-				// Load from static JSON files
-				const pagesResponse = await fetch('/data/pages.json');
-				const siteResponse = await fetch('/data/site.json').catch((error) => {
-					console.error('Error fetching site settings:', error);
-					return null;
-				});
+				let pagesData;
+				let siteData;
 
-				const pagesData = await pagesResponse.json();
-				const siteData = siteResponse ? await siteResponse.json() : null;
+				// In dev mode, fetch from Strapi API for live preview
+				// In production mode, use static JSON files
+				if (import.meta.env.DEV) {
+					console.log('🔧 Development mode: Fetching from Strapi API...');
+					try {
+						pagesData = await fetchPagesFromStrapi();
+						siteData = await fetchSiteFromStrapi();
+					} catch (strapiError) {
+						console.warn('⚠️ Could not connect to Strapi, falling back to static JSON:', strapiError.message);
+						// Fallback to static JSON if Strapi is not available
+						const pagesResponse = await fetch('/data/pages.json');
+						const siteResponse = await fetch('/data/site.json').catch(() => null);
+						pagesData = await pagesResponse.json();
+						siteData = siteResponse ? await siteResponse.json() : null;
+					}
+				} else {
+					console.log('📦 Production mode: Loading from static JSON files...');
+					// Load from static JSON files
+					const pagesResponse = await fetch('/data/pages.json');
+					const siteResponse = await fetch('/data/site.json').catch((error) => {
+						console.error('Error fetching site settings:', error);
+						return null;
+					});
+
+					pagesData = await pagesResponse.json();
+					siteData = siteResponse ? await siteResponse.json() : null;
+				}
 
 				const rawPages = pagesData?.data || [];
 				const normalisedPages = rawPages.map(normalizePage);
@@ -131,9 +153,44 @@ function App() {
 		window.scrollTo(0, 0);
 	}, [currentPage, isIndexPage]);
 
-	if (loading) {
-		return <div>Loading...</div>;
-	}
+	// Update document title from site settings
+	useEffect(() => {
+		if (siteSettings?.title) {
+			document.title = siteSettings.title;
+		}
+	}, [siteSettings]);
+
+	// Apply page background and text colors
+	useEffect(() => {
+		const appContainer = document.querySelector('.app-container');
+		if (!appContainer) return;
+
+		if (currentPage?.backgroundColor) {
+			appContainer.style.backgroundColor = currentPage.backgroundColor;
+		} else {
+			// Reset to default when no color is set or on index page
+			appContainer.style.backgroundColor = '';
+		}
+
+		if (currentPage?.textColor) {
+			appContainer.style.color = currentPage.textColor;
+		} else {
+			// Reset to default when no color is set or on index page
+			appContainer.style.color = '';
+		}
+
+		// Cleanup function to reset on unmount
+		return () => {
+			if (appContainer) {
+				appContainer.style.backgroundColor = '';
+				appContainer.style.color = '';
+			}
+		};
+	}, [currentPage]);
+
+	// if (loading) {
+	// 	return <div>Loading...</div>;
+	// }
 
 	console.log('Current page:', currentPage);
 	console.log('Content:', currentPage?.content);
@@ -146,6 +203,7 @@ function App() {
 				currentPage={currentPage}
 				onSelectPage={handleSelectPage}
 				onPageHover={handlePageHover}
+				siteSettings={siteSettings}
 			/>
 			{isIndexPage ? (
 				<ImageDisplay

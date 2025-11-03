@@ -1,7 +1,7 @@
 import React, {useState, useRef} from 'react';
 import ImagePopover from './ImagePopover';
 
-const Sidebar = ({pages, currentPage, onSelectPage, onPageHover}) => {
+const Sidebar = ({pages, currentPage, onSelectPage, onPageHover, siteSettings}) => {
 	const [hoveredPage, setHoveredPage] = useState(null);
 	const [hoveredElement, setHoveredElement] = useState(null);
 	const rowRefs = useRef({});
@@ -45,6 +45,10 @@ const Sidebar = ({pages, currentPage, onSelectPage, onPageHover}) => {
 		return acc;
 	}, []);
 
+	// Get site title and bio from siteSettings
+	const siteTitle = siteSettings?.title || 'Shabtai Pinchevsky';
+	const siteBio = siteSettings?.bio || "I'm a photographer and digital media artist working at the intersection of architecture, archives, technology, and politics. In my works, I use 3D modeling, mapping, internet-based tools, and more to examine archival photographic materials and their relations to geographies of conflict and displacement, especially in Israel / Palestine. My practice is engaged with issues of social justice and human rights, and their application in art and media";
+
 	return (
 		<div className='sidebar'>
 			<h1
@@ -59,17 +63,11 @@ const Sidebar = ({pages, currentPage, onSelectPage, onPageHover}) => {
 				tabIndex={0}
 				style={{cursor: 'pointer'}}
 			>
-				Shabtai Pinchevsky
+				{siteTitle}
 			</h1>
 			<hr />
 			<p>
-				I'm a photographer and digital media artist working at the intersection
-				of architecture, archives, technology, and politics. In my works, I use
-				3D modeling, mapping, internet-based tools, and more to examine archival
-				photographic materials and their relations to geographies of conflict
-				and displacement, especially in Israel / Palestine. My practice is
-				engaged with issues of social justice and human rights, and their
-				application in art and media
+				{siteBio}
 			</p>
 
 			{groupedPages.map(({ groupName, pages: groupPages }) => (

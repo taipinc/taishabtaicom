@@ -1,4 +1,5 @@
 import React from 'react';
+import {resolveMediaUrl} from '../utils/media';
 
 /**
  * ResponsiveImage component
@@ -16,9 +17,10 @@ const ResponsiveImage = ({image, alt, sizes, className, style, ...rest}) => {
 
 	// Handle string URLs (backwards compatibility)
 	if (typeof image === 'string') {
+		const resolvedSrc = resolveMediaUrl(image);
 		return (
 			<img
-				src={image}
+				src={resolvedSrc}
 				alt={alt || 'Image'}
 				className={className}
 				style={style}
@@ -27,11 +29,11 @@ const ResponsiveImage = ({image, alt, sizes, className, style, ...rest}) => {
 		);
 	}
 
-	// Extract image data
-	const src = image.url || image?.attributes?.url || image?.data?.attributes?.url;
+	// Extract image data and resolve URL (handles dev vs prod mode)
+	const src = resolveMediaUrl(image);
 	if (!src) return null;
 
-	// Check if we have responsive image data
+	// Check if we have responsive image data (only available in production after optimization)
 	const responsive = image.responsive;
 
 	if (!responsive || !responsive.srcset || responsive.srcset.length === 0) {
@@ -47,7 +49,7 @@ const ResponsiveImage = ({image, alt, sizes, className, style, ...rest}) => {
 		);
 	}
 
-	// Build srcset string
+	// Build srcset string (only in production mode with optimized images)
 	const srcsetString = responsive.srcset
 		.map((source) => `${source.url} ${source.width}w`)
 		.join(', ');

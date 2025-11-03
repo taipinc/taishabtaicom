@@ -32,21 +32,29 @@ taishabtaicom/
 ```bash
 cd taishabtai-frontend
 
-# Development
-npm run dev                # Start dev server (http://localhost:5173)
-npm run preview            # Preview production build locally
+# Development (requires Strapi running on localhost:1337)
+npm run dev                # Start dev server with LIVE Strapi API preview (http://localhost:5173)
+                           # Content and images load directly from Strapi - edit & refresh to see changes!
 
-# Data & Assets
+# Preview Production Build
+npm run preview            # Preview production build locally (uses static JSON/images)
+
+# Data & Assets (for production deployment)
 npm run fetch-data         # Fetch content from Strapi to /public/data/*.json
 npm run optimize-images    # Optimize images with Sharp (WebP, JPEG, multiple sizes)
 
 # Building
-npm run build              # Standard production build
-npm run build:full         # Fetch data + optimize images + build
+npm run build              # Standard production build (uses existing static JSON/images)
+npm run build:full         # Fetch data + optimize images + build (complete production build)
 
 # Code Quality
 npm run lint               # Run ESLint
 ```
+
+**Important Distinction:**
+- `npm run dev` - Development mode with live Strapi API connection (no static files needed)
+- `npm run preview` - Tests production build locally (requires `npm run build` first)
+- `npm run build:full` - Generates production-ready static site with optimized assets
 
 ### Backend Development (Strapi)
 
@@ -92,16 +100,101 @@ The app uses **HTML5 History API** instead of React Router. All routing logic is
 - `taishabtai-frontend/src/App.jsx:76-104` - URL parsing and page matching
 - `taishabtai-frontend/src/App.jsx:106-116` - Navigation handler
 
-#### Static Data Loading
-Content is loaded from static JSON files (not live API calls):
+#### Development vs Production Mode
+
+**CRITICAL CONCEPT**: The frontend operates in two different modes depending on the environment:
+
+| Mode | When | Data Source | Image Source |
+|------|------|-------------|--------------|
+| **Development** | `npm run dev` | Strapi API at `http://localhost:1337` | Strapi uploads at `http://localhost:1337/uploads/` |
+| **Production** | `npm run build`, `npm run preview`, deployed | Static JSON files in `/public/data/` | Optimized images in `/public/images/` |
+
+**Why This Matters:**
+- **Dev mode**: Provides live preview - edit content in Strapi, refresh browser, see changes immediately
+- **Production mode**: Uses pre-generated static files for fast, CDN-friendly deployment
+
+**How It Works:**
+
+The app detects the environment using Vite's `import.meta.env.DEV`:
+
+```javascript
+// In App.jsx
+if (import.meta.env.DEV) {
+  // Development: Fetch from Strapi API
+  pagesData = await fetchPagesFromStrapi();
+  siteData = await fetchSiteFromStrapi();
+} else {
+  // Production: Load from static JSON
+  const pagesResponse = await fetch('/data/pages.json');
+  const siteResponse = await fetch('/data/site.json');
+}
+```
+
+**Media URL Resolution:**
+
+The `resolveMediaUrl()` utility (in `media.js`) handles image URLs differently per mode:
+
+```javascript
+// Development mode
+'/uploads/image_hash.jpg' → 'http://localhost:1337/uploads/image_hash.jpg'
+
+// Production mode
+'/uploads/image_hash.jpg' → '/images/image_hash.jpg' (optimized local copy)
+```
+
+**Key Files**:
+- `taishabtai-frontend/src/App.jsx:42-93` - Conditional data loading
+- `taishabtai-frontend/src/services/strapiApi.js` - Strapi API client (dev mode only)
+- `taishabtai-frontend/src/utils/media.js` - URL resolution with mode detection
+- `taishabtai-frontend/src/components/ResponsiveImage.jsx` - Uses `resolveMediaUrl()`
+
+**Adding New Features:**
+
+When adding features that display media or data, you MUST:
+
+1. **Use `resolveMediaUrl()` for all image URLs** - Never extract URLs directly from objects
+2. **Use `ResponsiveImage` component** - Already handles mode detection
+3. **Don't assume local files exist in dev** - Images come from Strapi
+4. **Test both modes**:
+   - Dev: `npm run dev` (requires Strapi running)
+   - Production: `npm run build && npm run preview`
+
+**Example - Adding a New Image Display:**
+
+```javascript
+// ❌ WRONG - This will break in dev mode
+const ImageComponent = ({image}) => {
+  const url = image.url || image?.attributes?.url;
+  return <img src={url} />; // URL not resolved for dev mode
+};
+
+// ✅ CORRECT - Works in both modes
+import {resolveMediaUrl} from '../utils/media';
+
+const ImageComponent = ({image}) => {
+  const url = resolveMediaUrl(image);
+  return <img src={url} />;
+};
+
+// ✅ BEST - Use ResponsiveImage (handles responsive images + mode detection)
+import ResponsiveImage from './ResponsiveImage';
+
+const ImageComponent = ({image}) => {
+  return <ResponsiveImage image={image} alt="Description" />;
+};
+```
+
+#### Static Data Loading (Production Mode)
+Content is loaded from static JSON files in production:
 
 1. Data fetching script (`scripts/fetch-strapi-data.js`) calls Strapi API
 2. Downloads content + images to `/public/data/` and `/public/images/`
-3. React app loads from these static files at runtime
+3. React app loads from these static files at runtime (in production/preview modes)
+
+In development mode, this step is skipped - data comes directly from Strapi API.
 
 **Key Files**:
 - `taishabtai-frontend/scripts/fetch-strapi-data.js` - Strapi data fetcher
-- `taishabtai-frontend/src/App.jsx:41-71` - Static JSON loading
 
 #### Dynamic Content Blocks
 Pages use a component-based content system defined in Strapi:
@@ -117,25 +210,38 @@ Pages use a component-based content system defined in Strapi:
 - `taishabtai-frontend/src/components/PageContent.jsx:47-246` - Content block renderer
 
 #### Image Handling
-Multi-stage image pipeline:
+
+**Production Mode - Multi-stage image pipeline:**
 
 1. **Fetch**: `fetch-strapi-data.js` downloads original images from Strapi to `/public/images/`
 2. **Optimize**: `process-images.js` creates optimized versions in `/public/images/optimized/`:
    - Multiple sizes: 640w, 1024w, 1920w, 2560w, original
    - Optimized quality (JPEG: 85%, PNG: 90%)
    - Updates `pages.json` and `site.json` with new URLs and responsive srcset data
-3. **Display**: `ResponsiveImage.jsx` uses `<img srcset>` for responsive loading
+3. **Display**: `ResponsiveImage.jsx` uses `<img srcset>` for responsive loading with optimized images
 4. **Lightbox**: `ImageLightbox.jsx` provides fullscreen viewing with keyboard navigation
 
+**Development Mode - Direct from Strapi:**
+
+1. Images load directly from Strapi at `http://localhost:1337/uploads/`
+2. No optimization or responsive images (srcset) - single image source
+3. `ResponsiveImage.jsx` detects dev mode and uses simple `<img>` without srcset
+4. Lightbox works the same, but with non-optimized images
+
 **URL Resolution** (`media.js`):
-- Strapi URLs (`/uploads/...`) → extracts filename → `/images/filename.jpg`
-- Optimized URLs (`/images/optimized/...`) → returns as-is (already processed)
-- This allows the same component to work with both raw Strapi data and optimized data
+
+See the **Development vs Production Mode** section above for details. In summary:
+- **Dev mode**: Strapi URLs (`/uploads/...`) → `http://localhost:1337/uploads/...`
+- **Production mode**: Strapi URLs (`/uploads/...`) → `/images/filename.jpg` (optimized local copy)
+
+**Image Filename Hashes:**
+
+Strapi automatically adds hashes to uploaded filenames (e.g., `image_a7a16451de.jpg`) to prevent collisions. This is normal and handled correctly by `resolveMediaUrl()`.
 
 **Key Files**:
-- `taishabtai-frontend/scripts/process-images.js` - Image optimization with Sharp
-- `taishabtai-frontend/src/components/ResponsiveImage.jsx` - Responsive image component
-- `taishabtai-frontend/src/utils/media.js` - URL resolution helper
+- `taishabtai-frontend/scripts/process-images.js` - Image optimization with Sharp (production only)
+- `taishabtai-frontend/src/components/ResponsiveImage.jsx` - Responsive image component (mode-aware)
+- `taishabtai-frontend/src/utils/media.js` - URL resolution helper (mode-aware)
 
 ### Backend Architecture (Strapi)
 
@@ -201,14 +307,27 @@ npm run build:full         # Runs fetch-data + optimize-images + build
 - The static JSON and optimized images ARE the deployed content
 - This is a "static site generator" pattern - build artifacts are version controlled
 
-### Development Only (No Deployment)
+### Development Only (Live Preview)
+
+When developing and testing content, use this workflow for instant live preview:
+
 ```bash
-cd taishabtai-backend && npm run develop    # Start Strapi CMS
-# Edit content at http://localhost:1337/admin
-cd ../taishabtai-frontend
-npm run fetch-data                           # Pull latest content
-npm run dev                                  # View at http://localhost:5173
+# Terminal 1: Start Strapi backend
+cd taishabtai-backend
+npm run develop                              # Start Strapi at http://localhost:1337
+
+# Terminal 2: Start frontend dev server
+cd taishabtai-frontend
+npm run dev                                  # Start at http://localhost:5173
 ```
+
+**Live Preview Workflow:**
+1. Edit content in Strapi admin panel at `http://localhost:1337/admin`
+2. Save your changes
+3. Refresh the browser at `http://localhost:5173`
+4. Changes appear immediately - no need to run `fetch-data`!
+
+**Note**: In dev mode, `npm run dev` fetches data directly from Strapi API and loads images from Strapi uploads. This is different from production, which uses pre-generated static JSON and optimized images.
 
 ### Modifying Routing
 Edit `taishabtai-frontend/src/App.jsx`:
