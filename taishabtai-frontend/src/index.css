@@ -30,9 +30,10 @@ h1 {
   font-size: clamp(32px, calc(var(--vh) * 5), 72px);
   margin-bottom: 1rem;
   line-height: 1.2;
-  font-family: "fraunces-variable", sans-serif;
-  font-style: italic;
-  font-variation-settings: 'opsz' 9, 'wght' 100, 'SOFT' 100, 'WONK' 1;
+  font-family: "new-spirit-condensed", serif;
+  font-weight: 400;
+  font-style: italic;  
+  /* font-variation-settings: 'opsz' 9, 'wght' 100, 'SOFT' 100, 'WONK' 1; */
 }
 
 h2 {
@@ -60,9 +61,11 @@ hr {
   font-size: clamp(32px, calc(var(--vh) * 5), 72px);
   margin-bottom: 1rem;
   line-height: 1.2;
-  font-family: "fraunces-variable", sans-serif;
-  font-style: italic;
-  font-variation-settings: 'opsz' 9, 'wght' 500, 'SOFT' 100, 'WONK' 1;
+  font-family: "new-spirit-condensed", serif;
+  font-weight: 500;
+  font-style: normal;
+  /* font-style: italic; */
+  /* font-variation-settings: 'opsz' 9, 'wght' 500, 'SOFT' 100, 'WONK' 1; */
 }
 
 .sidebar p {
@@ -75,9 +78,10 @@ hr {
 }
 
 .group-title {
-  font-family: "fraunces-variable", sans-serif;
+  font-family: "new-spirit-condensed", serif;
+  font-weight: 400;
   font-style: italic;
-  font-variation-settings: 'opsz' 9, 'wght' 500, 'SOFT' 100, 'WONK' 1;
+  /* font-variation-settings: 'opsz' 9, 'wght' 500, 'SOFT' 100, 'WONK' 1; */
   font-size: clamp(20px, calc(var(--vh) * 2.8), 32px);
   margin-bottom: 0.75rem;
   margin-top: 0;
