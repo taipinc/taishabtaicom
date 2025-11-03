@@ -13,6 +13,8 @@
       "subtitle": null,
       "group": "Selected Works",
       "order": 2,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -29,6 +31,8 @@
       "subtitle": null,
       "group": "Selected Works",
       "order": 4,
+      "backgroundColor": null,
+      "textColor": null,
       "image": {
         "id": 1,
         "documentId": "id4mjy2ub8bv4u6kb2wlqjjc",
@@ -144,6 +148,8 @@
       "subtitle": "With Miki Kratsman",
       "group": "Selected Works",
       "order": 5,
+      "backgroundColor": null,
+      "textColor": null,
       "image": {
         "id": 2,
         "documentId": "knsel5k2iol7n8xln4bmwub2",
@@ -259,6 +265,8 @@
       "subtitle": null,
       "group": "Selected Works",
       "order": 6,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -275,6 +283,8 @@
       "subtitle": null,
       "group": "Selected Works",
       "order": 7,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -291,6 +301,8 @@
       "subtitle": null,
       "group": "Selected Works",
       "order": 8,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -307,6 +319,8 @@
       "subtitle": null,
       "group": "Selected Works",
       "order": 9,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -323,6 +337,8 @@
       "subtitle": null,
       "group": "Interactive",
       "order": 1,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -339,6 +355,8 @@
       "subtitle": null,
       "group": "Interactive",
       "order": 2,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -355,6 +373,8 @@
       "subtitle": null,
       "group": "Other Works",
       "order": 3,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -371,6 +391,8 @@
       "subtitle": null,
       "group": "Other Works",
       "order": 2,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -387,6 +409,8 @@
       "subtitle": null,
       "group": "Other Works",
       "order": 1,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -403,6 +427,8 @@
       "subtitle": null,
       "group": "Other Works",
       "order": 4,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -419,6 +445,8 @@
       "subtitle": null,
       "group": "Other Works",
       "order": 5,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -435,6 +463,8 @@
       "subtitle": null,
       "group": "Other Works",
       "order": 6,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -451,6 +481,8 @@
       "subtitle": null,
       "group": "Other Works",
       "order": 7,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -467,6 +499,8 @@
       "subtitle": null,
       "group": "Other Works",
       "order": 8,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
     },
@@ -483,183 +517,10 @@
       "subtitle": null,
       "group": "Other Works",
       "order": 10,
+      "backgroundColor": null,
+      "textColor": null,
       "image": null,
       "content": []
-    },
-    {
-      "id": 89,
-      "documentId": "ra53bjx5vje5d46bxubljno1",
-      "title": "Can a Self-Driving Car Navigate an Apartheid Road?",
-      "slug": "can a self-driving car",
-      "customCSS": null,
-      "createdAt": "2025-10-31T01:56:31.946Z",
-      "updatedAt": "2025-11-01T18:34:00.698Z",
-      "publishedAt": "2025-11-01T18:34:00.704Z",
-      "years": null,
-      "subtitle": null,
-      "group": "Ongoing",
-      "order": null,
-      "image": {
-        "id": 5,
-        "documentId": "yjwsfbp7w8rtw6ia2xv2i6xo",
-        "name": "_FINAL_01_07_19;29 copy.jpg",
-        "alternativeText": null,
-        "caption": null,
-        "width": 2707,
-        "height": 2160,
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail__FINAL_01_07_19;29 copy.jpg",
-            "hash": "thumbnail_FINAL_01_07_19_29_copy_98683f000f",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "path": null,
-            "width": 195,
-            "height": 156,
-            "size": 4.46,
-            "sizeInBytes": 4459,
-            "url": "/uploads/thumbnail_FINAL_01_07_19_29_copy_98683f000f.jpg"
-          },
-          "large": {
-            "name": "large__FINAL_01_07_19;29 copy.jpg",
-            "hash": "large_FINAL_01_07_19_29_copy_98683f000f",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "path": null,
-            "width": 1000,
-            "height": 798,
-            "size": 57.76,
-            "sizeInBytes": 57760,
-            "url": "/uploads/large_FINAL_01_07_19_29_copy_98683f000f.jpg"
-          },
-          "medium": {
-            "name": "medium__FINAL_01_07_19;29 copy.jpg",
-            "hash": "medium_FINAL_01_07_19_29_copy_98683f000f",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "path": null,
-            "width": 750,
-            "height": 599,
-            "size": 33.28,
-            "sizeInBytes": 33277,
-            "url": "/uploads/medium_FINAL_01_07_19_29_copy_98683f000f.jpg"
-          },
-          "small": {
-            "name": "small__FINAL_01_07_19;29 copy.jpg",
-            "hash": "small_FINAL_01_07_19_29_copy_98683f000f",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "path": null,
-            "width": 500,
-            "height": 399,
-            "size": 17.05,
-            "sizeInBytes": 17053,
-            "url": "/uploads/small_FINAL_01_07_19_29_copy_98683f000f.jpg"
-          }
-        },
-        "hash": "FINAL_01_07_19_29_copy_98683f000f",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 498.81,
-        "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
-        "previewUrl": null,
-        "provider": "local",
-        "provider_metadata": null,
-        "createdAt": "2025-11-01T18:32:54.048Z",
-        "updatedAt": "2025-11-01T19:44:53.651Z",
-        "publishedAt": "2025-11-01T18:32:54.048Z",
-        "responsive": {
-          "srcset": [
-            {
-              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-640w.jpg",
-              "width": 640,
-              "size": 11852
-            },
-            {
-              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1024w.jpg",
-              "width": 1024,
-              "size": 23654
-            },
-            {
-              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1920w.jpg",
-              "width": 1920,
-              "size": 98864
-            },
-            {
-              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-2560w.jpg",
-              "width": 2560,
-              "size": 172204
-            },
-            {
-              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
-              "width": 2707,
-              "size": 217918
-            }
-          ],
-          "sizes": "100vw"
-        }
-      },
-      "content": [
-        {
-          "__component": "text.big-text",
-          "id": 12,
-          "text": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "Can a Self-Driving Car Navigate an Apartheid Road?",
-                  "italic": true
-                },
-                {
-                  "type": "text",
-                  "text": " is a multi-channel video essay examining how autonomous vehicles navigate politically contested infrastructures, focusing on the segregated Israeli road system in Palestine. The work treats the self-driving car as both a technology of inquiry and a series of conceptual parallels for understanding how people navigate systems of discrimination and control."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__component": "video.video-embed",
-          "id": 18,
-          "url": "https://vimeo.com/1094254459",
-          "caption": null
-        },
-        {
-          "__component": "text.two-columns",
-          "id": 9,
-          "text": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "At the heart of the project is the concept of the autonomous vehicle as an \"Archive on Wheels\"—a traveling apparatus that continuously captures, processes, and acts upon images of its surroundings. Just as photography requires positioning oneself in relation to a subject, the car's primary function of \"ego-localization\" demands it determine where it stands before it can move. The work examines algorithmic processes—perception, attention, prediction, and decision-making—as frameworks for understanding how identity shapes navigation through segregated space."
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "---"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "text": "The project investigates how machine learning systems attempt to model the nuanced knowledge required to navigate apartheid infrastructure—knowledge deeply tied to identity and learned through lived experience. It asks: what identity will an autonomous system embody when navigating segregated territories, and what are the implications as these technologies are exported globally? By examining self-driving technologies in an extreme political context, the work reveals how systems of efficiency and safety encode and perpetuate patterns of discrimination and control."
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "id": 98,
@@ -674,6 +535,8 @@
       "subtitle": null,
       "group": "Selected Works",
       "order": 1,
+      "backgroundColor": null,
+      "textColor": null,
       "image": {
         "id": 6,
         "documentId": "q0last6glybdjsugnn2y0tli",
@@ -2000,6 +1863,8 @@
       "subtitle": null,
       "group": "Selected Works",
       "order": 3,
+      "backgroundColor": null,
+      "textColor": null,
       "image": {
         "id": 3,
         "documentId": "wwju08pxik3f6ylkocszf7r4",
@@ -2128,6 +1993,183 @@
                 {
                   "type": "text",
                   "text": "Conceived in response to the cancellation of Leila Khaled’s participation in a virtual San Francisco State University event in September 2020, the video takes the form of a letter and an invitation: for Khaled to pilot the flight in the space from which she is routinely barred. It addresses intertwined restrictions on communication, vision, and movement, proposing virtual navigation as a modest counter to imposed limits on who may see, and who may travel."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "documentId": "ra53bjx5vje5d46bxubljno1",
+      "title": "Can a Self-Driving Car Navigate an Apartheid Road?",
+      "slug": "can a self-driving car",
+      "customCSS": null,
+      "createdAt": "2025-10-31T01:56:31.946Z",
+      "updatedAt": "2025-11-03T01:17:49.383Z",
+      "publishedAt": "2025-11-03T01:17:49.391Z",
+      "years": null,
+      "subtitle": null,
+      "group": "Ongoing",
+      "order": null,
+      "backgroundColor": "#ffffff",
+      "textColor": "#33333",
+      "image": {
+        "id": 5,
+        "documentId": "yjwsfbp7w8rtw6ia2xv2i6xo",
+        "name": "_FINAL_01_07_19;29 copy.jpg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 2707,
+        "height": 2160,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail__FINAL_01_07_19;29 copy.jpg",
+            "hash": "thumbnail_FINAL_01_07_19_29_copy_98683f000f",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 195,
+            "height": 156,
+            "size": 4.46,
+            "sizeInBytes": 4459,
+            "url": "/uploads/thumbnail_FINAL_01_07_19_29_copy_98683f000f.jpg"
+          },
+          "large": {
+            "name": "large__FINAL_01_07_19;29 copy.jpg",
+            "hash": "large_FINAL_01_07_19_29_copy_98683f000f",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 1000,
+            "height": 798,
+            "size": 57.76,
+            "sizeInBytes": 57760,
+            "url": "/uploads/large_FINAL_01_07_19_29_copy_98683f000f.jpg"
+          },
+          "medium": {
+            "name": "medium__FINAL_01_07_19;29 copy.jpg",
+            "hash": "medium_FINAL_01_07_19_29_copy_98683f000f",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 750,
+            "height": 599,
+            "size": 33.28,
+            "sizeInBytes": 33277,
+            "url": "/uploads/medium_FINAL_01_07_19_29_copy_98683f000f.jpg"
+          },
+          "small": {
+            "name": "small__FINAL_01_07_19;29 copy.jpg",
+            "hash": "small_FINAL_01_07_19_29_copy_98683f000f",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 500,
+            "height": 399,
+            "size": 17.05,
+            "sizeInBytes": 17053,
+            "url": "/uploads/small_FINAL_01_07_19_29_copy_98683f000f.jpg"
+          }
+        },
+        "hash": "FINAL_01_07_19_29_copy_98683f000f",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 498.81,
+        "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2025-11-01T18:32:54.048Z",
+        "updatedAt": "2025-11-01T19:44:53.651Z",
+        "publishedAt": "2025-11-01T18:32:54.048Z",
+        "responsive": {
+          "srcset": [
+            {
+              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-640w.jpg",
+              "width": 640,
+              "size": 11852
+            },
+            {
+              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1024w.jpg",
+              "width": 1024,
+              "size": 23654
+            },
+            {
+              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-1920w.jpg",
+              "width": 1920,
+              "size": 98864
+            },
+            {
+              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-2560w.jpg",
+              "width": 2560,
+              "size": 172204
+            },
+            {
+              "url": "/images/optimized/FINAL_01_07_19_29_copy_98683f000f-original.jpg",
+              "width": 2707,
+              "size": 217918
+            }
+          ],
+          "sizes": "100vw"
+        }
+      },
+      "content": [
+        {
+          "__component": "text.big-text",
+          "id": 22,
+          "text": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Can a Self-Driving Car Navigate an Apartheid Road?",
+                  "italic": true
+                },
+                {
+                  "type": "text",
+                  "text": " is a multi-channel video essay examining how autonomous vehicles navigate politically contested infrastructures, focusing on the segregated Israeli road system in Palestine. The work treats the self-driving car as both a technology of inquiry and a series of conceptual parallels for understanding how people navigate systems of discrimination and control."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "video.video-embed",
+          "id": 28,
+          "url": "https://vimeo.com/1094254459",
+          "caption": null
+        },
+        {
+          "__component": "text.two-columns",
+          "id": 26,
+          "text": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "At the heart of the project is the concept of the autonomous vehicle as an \"Archive on Wheels\"—a traveling apparatus that continuously captures, processes, and acts upon images of its surroundings. Just as photography requires positioning oneself in relation to a subject, the car's primary function of \"ego-localization\" demands it determine where it stands before it can move. The work examines algorithmic processes—perception, attention, prediction, and decision-making—as frameworks for understanding how identity shapes navigation through segregated space."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "---"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "The project investigates how machine learning systems attempt to model the nuanced knowledge required to navigate apartheid infrastructure—knowledge deeply tied to identity and learned through lived experience. It asks: what identity will an autonomous system embody when navigating segregated territories, and what are the implications as these technologies are exported globally? By examining self-driving technologies in an extreme political context, the work reveals how systems of efficiency and safety encode and perpetuate patterns of discrimination and control."
                 }
               ]
             }
