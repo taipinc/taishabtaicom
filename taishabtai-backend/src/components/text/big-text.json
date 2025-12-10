@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_text_big_texts",
+  "info": {
+    "displayName": "Big Text"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

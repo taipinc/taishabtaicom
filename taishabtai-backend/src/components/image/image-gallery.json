@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_image_image_galleries",
+  "info": {
+    "displayName": "Image Gallery"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "layout": {
+      "type": "enumeration",
+      "default": "justify",
+      "enum": [
+        "justify",
+        "grid",
+        "masonry"
+      ]
+    },
+    "rows": {
+      "type": "integer",
+      "default": 3,
+      "min": 1,
+      "max": 10
+    },
+    "gutter": {
+      "type": "integer",
+      "default": 8,
+      "min": 0,
+      "max": 50
+    },
+    "enableFullscreen": {
+      "type": "boolean",
+      "default": true
+    },
+    "caption": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

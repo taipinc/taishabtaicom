@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_image_image_blocks",
+  "info": {
+    "displayName": "Image Block",
+    "icon": "landscape"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "enableFullscreen": {
+      "type": "boolean",
+      "default": true
+    },
+    "caption": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

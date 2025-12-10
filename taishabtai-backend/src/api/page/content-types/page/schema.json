@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "years": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "group": {
+      "type": "enumeration",
+      "enum": [
+        "Ongoing",
+        "Selected Works",
+        "Interactive",
+        "Other Works"
+      ]
+    },
+    "customCSS": {
+      "type": "text"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color"
+    },
+    "textColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "text.text-block",
+        "image.image-block",
+        "video.video-embed",
+        "text.two-columns",
+        "text.big-text",
+        "image.image-gallery"
+      ]
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

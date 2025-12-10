@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_text_two_columns",
+  "info": {
+    "displayName": "Two Columns"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}
