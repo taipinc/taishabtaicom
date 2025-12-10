@@ -198,7 +198,7 @@ hr {
 .page-subtitle {
   margin-left: auto;
   font-size: clamp(24px, calc(var(--vh) * 3.75), 54px);
-  font-family: "fraunces-variable", sans-serif;
+  font-family: "new-spirit-condensed", serif;
   font-style: italic;
   font-variation-settings: 'opsz' 9, 'wght' 100, 'SOFT' 100, 'WONK' 1;
   text-align: right;
